@@ -16,6 +16,7 @@ from pydantic import BaseModel
 
 from src.embeddings import MyEmbedder
 from src.store import PgVectorStore
+from webapp.answer import is_configured, synthesize_answer
 
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
@@ -45,6 +46,7 @@ class AskRequest(BaseModel):
     strategy: str = "c"
     mien: str | None = None
     top_k: int = 3
+    generate_answer: bool = False
 
 
 @app.post("/api/ask")
@@ -54,12 +56,31 @@ def ask(req: AskRequest):
     query_vector = embedder.embed_query(req.question)
     filters = {"mien": req.mien} if req.mien else None
     hits = store.search(req.strategy, query_vector, top_k=req.top_k, filters=filters)
+
+    answer = None
+    answer_error = None
+    if req.generate_answer:
+        if not is_configured():
+            answer_error = "OPENAI_API_KEY chưa được cấu hình trong starter/.env"
+        else:
+            try:
+                answer = synthesize_answer(req.question, hits)
+            except Exception as exc:  # surface to UI instead of silently failing
+                answer_error = str(exc)
+
     return {
         "question": req.question,
         "strategy": req.strategy,
         "filter": filters,
         "hits": hits,
+        "answer": answer,
+        "answer_error": answer_error,
     }
+
+
+@app.get("/api/llm_status")
+def llm_status():
+    return {"configured": is_configured()}
 
 
 @app.get("/api/health")

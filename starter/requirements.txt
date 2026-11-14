@@ -11,3 +11,4 @@ torch==2.15.0
 # Demo chatbot UI (webapp/) -- NOT required by the assignment, extra only.
 fastapi==0.162.7
 uvicorn[standard]==0.54.0
+openai==3.51.0

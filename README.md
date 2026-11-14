@@ -95,3 +95,10 @@ docker compose -p day6_student_starter up -d --wait   # nếu chưa chạy
 
 Mở `http://127.0.0.1:8099`, chọn chiến lược A/B/C (+ lọc miền nếu muốn), nhập câu hỏi về Nha Trang/
 Phú Quốc/Sa Pa/Vũng Tàu. Chỉ chạy local (bind `127.0.0.1`), không có xác thực — không expose ra ngoài.
+
+**Tùy chọn — trả lời bằng GPT:** dán `OPENAI_API_KEY` thật vào `starter/.env` (file này đã bị
+`.gitignore`, không bao giờ commit), tick ô "Trả lời bằng GPT" trên UI. Khi đó `webapp/answer.py`
+gọi `gpt-4o-mini` đọc đúng top-3 đoạn trích đã truy xuất và tóm tắt trả lời kèm trích nguồn — **chỉ
+dùng cho UI demo này**, không đụng tới pipeline/benchmark chính (`src/run.py` vẫn retrieval-only,
+không gọi LLM, giữ đúng định nghĩa "grounding" của GUIDE.md). Không có key thì ô này tự vô hiệu và
+chatbot vẫn hoạt động như cũ (chỉ hiện top-3 đoạn trích).
