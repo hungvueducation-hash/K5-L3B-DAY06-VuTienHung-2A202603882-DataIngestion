@@ -7,3 +7,7 @@ python-dotenv>=1,<2
 # Pinned to what this machine's Python 3.14 resolved at install time (2026-11-14).
 sentence-transformers==6.3.0
 torch==2.15.0
+
+# Demo chatbot UI (webapp/) -- NOT required by the assignment, extra only.
+fastapi==0.162.7
+uvicorn[standard]==0.54.0

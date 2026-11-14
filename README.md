@@ -80,3 +80,18 @@ Kết quả: `starter/results/run_meta.json`, `summary.json`, `trace_{a,b,c}.jso
 Experiment log: [artifacts/experiment_log.csv](artifacts/experiment_log.csv).
 
 Chi phí: $0 (embedding model chạy local, `sentence-transformers/all-MiniLM-L6-v2`, không gọi API trả phí).
+
+### Giao diện chatbot demo (ngoài yêu cầu bài tập)
+
+Lab không bắt buộc xây chatbot (xem mục trên), nhưng có thêm một UI demo kiểu chat để tra cứu trực
+tiếp trên pgvector thật — **không phải LLM sinh câu trả lời**, chỉ hiển thị top-3 đoạn trích + điểm
+số + metadata (giống đúng cách benchmark đo grounding). Code ở [starter/webapp/](starter/webapp/).
+
+```bash
+cd starter
+docker compose -p day6_student_starter up -d --wait   # nếu chưa chạy
+.venv\Scripts\python.exe -m uvicorn webapp.app:app --host 127.0.0.1 --port 8099
+```
+
+Mở `http://127.0.0.1:8099`, chọn chiến lược A/B/C (+ lọc miền nếu muốn), nhập câu hỏi về Nha Trang/
+Phú Quốc/Sa Pa/Vũng Tàu. Chỉ chạy local (bind `127.0.0.1`), không có xác thực — không expose ra ngoài.
