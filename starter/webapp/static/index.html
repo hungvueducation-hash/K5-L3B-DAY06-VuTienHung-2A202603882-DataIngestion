@@ -102,6 +102,19 @@
   footer button:disabled { opacity: 0.5; cursor: default; }
   .empty { color: var(--muted); text-align: center; margin-top: 60px; font-size: 14px; }
   .loading { color: var(--muted); font-size: 13px; }
+
+  /* Script tab */
+  .step { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+  .step .step-num { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #06101f; font-weight: 700; font-size: 13px; margin-right: 10px; }
+  .step h3 { display: inline; font-size: 15px; margin: 0; vertical-align: middle; }
+  .step .time { float: right; font-size: 11px; color: var(--muted); }
+  .step p { font-size: 14px; line-height: 1.7; margin: 12px 0; }
+  .step blockquote { margin: 10px 0; padding: 10px 14px; background: #0e1627; border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.7; color: #d7e3f5; font-style: italic; }
+  .step code { background: #0e1627; padding: 1px 6px; border-radius: 4px; font-size: 12.5px; color: var(--accent); }
+  .step pre { background: #0e1627; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size: 12.5px; overflow-x: auto; }
+  .step .file-tag { display: inline-block; font-size: 11px; color: var(--muted); background: var(--panel2); padding: 2px 10px; border-radius: 999px; margin-top: 8px; }
+  .step .tip { font-size: 12.5px; color: #facc15; margin-top: 8px; }
+  .script-table { margin: 10px 0 14px; }
 </style>
 </head>
 <body>
@@ -113,6 +126,7 @@
     <button class="tab-btn" data-tab="strategies">2. So sánh 3 chiến lược</button>
     <button class="tab-btn" data-tab="audit">3. Audit thủ công</button>
     <button class="tab-btn" data-tab="chat">4. Chatbot tra cứu</button>
+    <button class="tab-btn" data-tab="script">5. Kịch bản trình bày</button>
   </nav>
 </header>
 
@@ -151,6 +165,162 @@
         <input id="question" type="text" placeholder="Nhập câu hỏi về Nha Trang / Phú Quốc / Sa Pa / Vũng Tàu..." autocomplete="off" />
         <button id="send">Gửi</button>
       </footer>
+    </div>
+  </section>
+
+  <section id="tab-script" class="tab">
+    <div class="step">
+      <span class="step-num">0</span><h3>Đặt vấn đề</h3><span class="time">30 giây</span>
+      <blockquote>Bài toán của Data Ingestion là: làm sao biến một tài liệu thô (PDF, trang web...) thành một
+      kho tri thức mà AI agent có thể truy xuất được. Không phải cứ nhồi hết văn bản vào là xong — cách mình
+      chia nhỏ (chunking) và gắn thông tin (metadata) ảnh hưởng trực tiếp đến việc AI tìm đúng câu trả lời hay
+      không. Em đã xây một pipeline thật, đo lường 3 cách làm khác nhau trên cùng 1 dữ liệu, để chứng minh
+      điều đó bằng số liệu, không phải chỉ nói lý thuyết.</blockquote>
+      <p><b>Dữ liệu em dùng:</b> 4 bài Wikipedia tiếng Việt (Nha Trang, Phú Quốc, Sa Pa, Vũng Tàu) — 34 đoạn
+      nội dung, 52.351 ký tự, giấy phép CC BY-SA cho phép dùng.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-num">1</span><h3>Ingestion: đọc và chuẩn hóa</h3><span class="time">1 phút</span>
+      <blockquote>Bước đầu tiên không phải là AI, mà là xử lý văn bản sạch. Em lấy nguyên văn 4 bài qua
+      MediaWiki API, loại bỏ các phần không phải nội dung thật như Hình ảnh, Tham khảo, Xem thêm. Sau đó
+      chuẩn hóa Unicode — vì tiếng Việt có dấu, cùng một chữ có thể được mã hóa theo nhiều cách khác nhau
+      trong máy tính (ví dụ "ờ" có thể là 1 ký tự ghép sẵn hoặc 2 ký tự ghép lại), nếu không chuẩn hóa thì
+      máy tính coi 2 chữ giống nhau là... khác nhau.</blockquote>
+      <span class="file-tag">starter/src/ingestion.py — hàm normalize_text()</span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span><h3>Chunking: chia nhỏ văn bản</h3><span class="time">2 phút</span>
+      <p><b>Cách A — <code>fixed_size</code>:</b> cắt cứng mỗi 500 ký tự, chồng lấn (overlap) 50 ký tự.</p>
+      <blockquote>Giống như cắt một đoạn văn thành từng khúc 500 ký tự bằng thước đo, không quan tâm câu
+      đang viết tới đâu. Nhanh, đơn giản, nhưng dễ cắt ngang câu.</blockquote>
+      <p><b>Cách B — <code>by_paragraph</code>:</b> chia theo đoạn văn thật (dòng trống), gộp đoạn tới khi gần 500 ký tự.</p>
+      <blockquote>Giống như cắt theo dấu chấm hết đoạn, giữ trọn ý của từng đoạn văn. Nhưng nếu nguồn là văn
+      bản viết liền mạch không ngắt đoạn, nó cũng phải cắt cứng giống cách A.</blockquote>
+      <span class="file-tag">starter/src/chunking.py</span>
+      <div class="tip">Mẹo nhớ: A = cắt theo thước; B = cắt theo ý.</div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span><h3>Embedding: biến chữ thành số <span style="color:var(--accent)">(phần quan trọng nhất)</span></h3><span class="time">3 phút</span>
+      <blockquote>Máy tính không hiểu chữ, nó chỉ làm toán với số. Nên mỗi đoạn văn bản (chunk) phải được
+      biến thành một vector — một dãy số thể hiện "ý nghĩa" của đoạn đó.</blockquote>
+      <p><b>Ví dụ dễ hiểu:</b> tưởng tượng mỗi câu được đặt vào một không gian nhiều chiều, giống tọa độ trên
+      bản đồ. Câu "Sa Pa nằm ở độ cao 1.500m" và câu "Sa Pa ở trên núi cao" sẽ có tọa độ <b>gần nhau</b> vì
+      nghĩa giống nhau — dù dùng chữ khác nhau hoàn toàn. Còn câu về "giống chó Phú Quốc" sẽ có tọa độ
+      <b>xa</b> câu về độ cao Sa Pa.</p>
+      <p><b>Model dùng:</b> <code>sentence-transformers/all-MiniLM-L6-v2</code></p>
+      <ul>
+        <li>Biến mỗi đoạn thành vector <b>384 chiều</b> (384 con số)</li>
+        <li>Chạy <b>local trên máy</b>, không cần API, không mạng khi đã tải model → chi phí <b>$0</b></li>
+        <li>Dùng <b>đúng 1 model</b> cho cả câu hỏi và tài liệu, để tọa độ so sánh được với nhau</li>
+      </ul>
+      <span class="file-tag">starter/src/embeddings.py</span>
+      <div class="tip">Nếu bị hỏi "sao không dùng API GPT để embedding?": vì bài yêu cầu model thật nhưng
+      không bắt buộc trả phí — model local đủ tốt, chạy CPU, tránh phát sinh API key/chi phí.</div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">4</span><h3>Vector store: lưu và tìm kiếm</h3><span class="time">3 phút</span>
+      <blockquote>Sau khi có vector, phải lưu vào nơi hỗ trợ tìm kiếm theo độ tương tự — không phải tìm
+      kiểu SQL thường (bằng/không bằng), mà tìm "cái nào gần giống nhất". Em dùng PostgreSQL + pgvector —
+      extension thêm kiểu dữ liệu VECTOR vào Postgres.</blockquote>
+      <p><b>Cosine similarity:</b> hình dung 2 vector như 2 mũi tên cùng xuất phát 1 điểm. Cùng hướng → giống
+      nhau (gần 1). Vuông góc → không liên quan (gần 0). SQL viết là <code>embedding &lt;=&gt; query_vector</code>
+      — đây là khoảng cách, nên lấy <code>1 - khoảng cách</code> ra điểm giống nhau (score), dễ đọc hơn.</p>
+      <pre>SELECT chunk_id, text, page, mien, embedding &lt;=&gt; %s AS distance
+FROM chunks_c
+WHERE mien = 'Nam'        -- chỉ có khi câu hỏi yêu cầu lọc theo miền
+ORDER BY embedding &lt;=&gt; %s
+LIMIT 3</pre>
+      <p>Dòng <code>WHERE mien = 'Nam'</code> chính là <b>metadata filter</b> — lọc ngay trong SQL, không
+      phải lọc sau khi đã lấy kết quả.</p>
+      <p><b>3 bảng riêng:</b> <code>chunks_a</code>, <code>chunks_b</code>, <code>chunks_c</code> — không lẫn
+      dữ liệu giữa 3 chiến lược. <b>Chống trùng khi nạp lại:</b> xóa chunk cũ của tài liệu trước khi ghi mới —
+      đã chạy pipeline 2 lần để chứng minh số chunk không tăng (132/129/129 cả 2 lần).</p>
+      <span class="file-tag">starter/src/store.py</span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">5</span><h3>3 chiến lược A/B/C: thí nghiệm có kiểm soát</h3><span class="time">2 phút</span>
+      <blockquote>Để so sánh công bằng, em chỉ đổi đúng 1 yếu tố mỗi lần — giống thí nghiệm khoa học, không
+      đổi nhiều biến cùng lúc.</blockquote>
+      <table class="script-table">
+        <thead><tr><th></th><th>Chunking</th><th>Filter khi tìm</th><th>Biến đổi so với dòng trên</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill a">A</span></td><td>fixed-size (500/50)</td><td>Không</td><td>—</td></tr>
+          <tr><td><span class="pill b">B</span></td><td>by_paragraph (500)</td><td>Không</td><td>Chỉ đổi cách chia chunk</td></tr>
+          <tr><td><span class="pill c">C</span></td><td>by_paragraph (500)</td><td>Có (mien/section)</td><td>Chỉ đổi có lọc hay không</td></tr>
+        </tbody>
+      </table>
+      <p>A→B cho biết: cách chia chunk ảnh hưởng gì. B→C cho biết: thêm bộ lọc metadata ảnh hưởng gì. Đổi cả 2
+      cùng lúc sẽ không biết cải thiện đến từ đâu.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-num">6</span><h3>Benchmark: đo lường bằng gì</h3><span class="time">2 phút</span>
+      <blockquote>Em tự soạn 27 câu hỏi từ chính nội dung 4 bài, chia trước 20 câu dev / 7 câu test — dev để
+      chọn chiến lược tốt nhất, test chỉ chạy đúng 1 lần cuối để báo cáo, không sửa lại sau khi xem kết quả
+      test (tránh "học lệch" theo bộ test).</blockquote>
+      <p><b>2 chỉ số chính:</b> <b>Hit@1</b> — top-1 kết quả có đúng là đoạn chứa câu trả lời không?
+      <b>Evidence Hit@3</b> — trong top-3, có ít nhất 1 đúng không? Một câu "đúng" khi chunk vừa đúng trang
+      gold, vừa chứa đủ nguyên văn câu bằng chứng (<code>evidence_quote</code>).</p>
+      <p><b>11/27 câu có filter</b> (ví dụ "chỉ tìm trong miền Nam") để kiểm tra riêng khả năng tuân thủ
+      phạm vi.</p>
+      <span class="file-tag">benchmark/questions.json · starter/src/evaluation.py</span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">7</span><h3>Kết quả thật <span style="color:var(--muted); font-size:12px;">(mở tab "2. So sánh 3 chiến lược")</span></h3><span class="time">2 phút</span>
+      <table class="script-table">
+        <thead><tr><th></th><th>Hit@1 dev</th><th>Hit@3 dev</th><th>Filter compliance (11 câu)</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill a">A</span></td><td>20%</td><td>35%</td><td>6/11</td></tr>
+          <tr><td><span class="pill b">B</span></td><td>30%</td><td>50%</td><td>6/11</td></tr>
+          <tr><td><span class="pill c">C</span></td><td>35%</td><td>60%</td><td><b>11/11</b></td></tr>
+        </tbody>
+      </table>
+      <blockquote>A→B: Hit@3 tăng từ 35% lên 50% — chunking theo đoạn giữ trọn câu, giúp tìm đúng evidence
+      tốt hơn chunking cơ học. B→C: Hit@k gần như không đổi, nhưng filter compliance nhảy từ 6/11 lên 11/11
+      tuyệt đối — vì C bắt buộc lọc trong SQL, không phải "ăn may" như A/B.</blockquote>
+      <p><b>Phát hiện thú vị khi chấm tay (coherence):</b> lợi ích của chunking theo đoạn không phải lúc nào
+      cũng đúng — nó chỉ rõ ràng khi nguồn có ranh giới đoạn thật (dòng trống). Nhiều đoạn lịch sử hành
+      chính trong bài Wikipedia viết liền mạch không ngắt đoạn, nên cả 2 cách chunk cắt giống nhau ở những
+      vị trí đó. Đây là insight thật từ dữ liệu, không phải giả định lý thuyết.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-num">8</span><h3>Audit thủ công: tại sao không chỉ tin số tự động</h3><span class="time">1 phút</span>
+      <blockquote>GUIDE.md yêu cầu không chỉ tin Hit@k, mà phải đọc bằng tay 2 việc: Chunk coherence — đọc
+      10 vị trí cố định, cho điểm 0-2 xem chunk có giữ trọn ý không (A chỉ đạt 0.7/2, B/C đạt 0.9/2).
+      Grounding quality — đọc 5 câu test, xem top-3 có đủ bằng chứng để trả lời không (A đạt 1.6/2, B/C đạt
+      2.0/2 — tuyệt đối).</blockquote>
+      <p>Em tự công khai mình vừa là người viết benchmark vừa là người chấm — có nguy cơ thiên lệch, nên đã
+      ghi rõ trong báo cáo.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-num">9</span><h3>Demo trực tiếp</h3>
+      <p>Em vừa trình bày qua số liệu, giờ demo thật trên dashboard:</p>
+      <ol style="font-size:14px; line-height:1.8;">
+        <li>Tab <b>Tổng quan</b> — nhìn 4 bài, số unit.</li>
+        <li>Tab <b>So sánh chiến lược</b> — chỉ vào biểu đồ Hit@3, filter compliance.</li>
+        <li>Tab <b>Audit thủ công</b> — chỉ vào điểm coherence/grounding.</li>
+        <li>Tab <b>Chatbot</b> — hỏi trực tiếp, ví dụ "Vũng Tàu là đơn vị hành chính thuộc đâu?", chọn
+        chiến lược C, xem top-3 đoạn trích + (nếu có key) câu trả lời GPT kèm trích nguồn.</li>
+      </ol>
+    </div>
+
+    <div class="step">
+      <span class="step-num">10</span><h3>Kết luận</h3><span class="time">30 giây</span>
+      <blockquote>Với corpus Wikipedia tiếng Việt này, chiến lược C (chunking theo đoạn + filter metadata)
+      là tốt nhất khi ứng dụng cần giới hạn phạm vi tìm kiếm. Nhưng em cũng trung thực nêu hạn chế: test
+      set chỉ 7 câu nên sai số mẫu lớn, và corpus mất cân đối (Phú Quốc chiếm 62%) — nên kết luận này chỉ
+      đúng trong phạm vi 4 bài này, không suy rộng ra mọi loại dữ liệu.</blockquote>
+      <div class="tip">Mẹo khi bị hỏi xoáy: nếu không nhớ số chính xác, luôn có thể nói "số liệu thật nằm
+      trong starter/results/summary.json và báo cáo cá nhân, em mở ngay cho thầy/cô xem" — vì mọi con số
+      đều có file chứng minh, không phải nói miệng.</div>
     </div>
   </section>
 </main>
