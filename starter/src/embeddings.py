@@ -1,4 +1,11 @@
-"""Choose a real embedding provider (API or local) and implement this contract."""
+"""Local embedding model (sentence-transformers) — no API key required.
+
+Chosen model: sentence-transformers/all-MiniLM-L6-v2, 384 dimensions.
+Reasoning: corpus and benchmark questions are English, the model is small
+enough to run on CPU within the lab's time budget, and cost is $0 (no API).
+Query and document texts are embedded with the same model/call, so they are
+directly comparable under cosine similarity.
+"""
 from typing import Protocol
 
 
@@ -16,14 +23,19 @@ class Embedder(Protocol):
 
 
 class MyEmbedder:
-    """TODO: implement a provider adapter; do not silently fall back to mock vectors."""
+    """Local sentence-transformers adapter. Raises if the model fails to load."""
 
-    def __init__(self, model_name: str) -> None:
+    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2") -> None:
+        from sentence_transformers import SentenceTransformer
+
         self.model_name = model_name
-        raise NotImplementedError("TODO: initialize real embedder and dimensions")
+        self._model = SentenceTransformer(model_name)
+        self.dimensions = self._model.get_embedding_dimension()
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        raise NotImplementedError("TODO: embed_documents")
+        vectors = self._model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
+        return [v.tolist() for v in vectors]
 
     def embed_query(self, question: str) -> list[float]:
-        raise NotImplementedError("TODO: embed_query")
+        vector = self._model.encode([question], normalize_embeddings=True, show_progress_bar=False)[0]
+        return vector.tolist()

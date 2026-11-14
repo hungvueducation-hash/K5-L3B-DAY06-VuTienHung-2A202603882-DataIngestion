@@ -1,0 +1,1266 @@
+[
+  {
+    "question_id": "q01",
+    "split": "dev",
+    "question": "Nha Trang hiện nay là đơn vị hành chính cấp xã thuộc tỉnh nào?",
+    "gold_source_id": "nha-trang",
+    "gold_page": 1,
+    "evidence_quote": "Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Nha Trang, một đơn vị hành chính cấp xã thuộc tỉnh Khánh Hòa, Việt Nam.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "nha-trang:p1:para:0",
+        "document_id": "nha-trang",
+        "page": 1,
+        "section": "Giới thiệu",
+        "mien": "Trung",
+        "score": 0.8053377982772724,
+        "text_preview": "Nha Trang là một địa danh tại miền Trung Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Nha Trang, một đơn vị hành chính cấp xã thuộc tỉnh Khánh Hòa, Việt Nam.",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p27:para:0",
+        "document_id": "sa-pa",
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "score": 0.7612905048554849,
+        "text_preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Sa Pa, một đơn vị hành chính cấp xã thuộc tỉnh Lào Cai, Việt Nam. Sa Pa nổi tiếng với những thửa ruộng bậc thang ",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "vung-tau:p34:para:6",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7583155632019043,
+        "text_preview": "hành chính độc lập. Ngày 14 tháng 1 năm 1899 thành phố tự trị Cap Saint Jacques thành lập tổng Vũng Tàu gồm 7 xã.\nChính quyền bảo hộ gấp rút quy hoạch trung tâm hành chính ở Vũng Tàu dọc theo Bãi Trước. Các công sở đua nhau mọc lên như Nhà dây thép, Phòng hoa tiêu, Nhà Đoan, Trạm kiểm dịch, Hải đăng",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q02",
+    "split": "dev",
+    "question": "Theo bài viết, tên gọi Nha Trang bắt nguồn từ đâu?",
+    "gold_source_id": "nha-trang",
+    "gold_page": 2,
+    "evidence_quote": "tên Nha Trang được hình thành do cách đọc của người Việt phỏng theo âm một địa danh Chăm vốn có trước là Aia Trang theo tiếng Chăm và Ea Trang theo tiếng Rađe",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p10:para:4",
+        "document_id": "phu-quoc",
+        "page": 10,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.67569897464526,
+        "text_preview": "500 người dân Việt Nam trên đảo đưa về Campuchia và tàn sát toàn bộ.\nNgày 27 tháng 5 năm 1975, Hải quân nhân dân Việt Nam giải phóng đảo Thổ Châu.\nNgày 20 tháng 9 năm 1975, Bộ Chính trị ban hành Nghị quyết số 245-NQ/TW về việc:",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p28:para:1",
+        "document_id": "sa-pa",
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "score": 0.6688418388366747,
+        "text_preview": "c tên đó là loạt tên xã theo tiếng H'Mông như Lao Chải, San Sả Hồ, Sử Pán, Suối Thầu, Tả Giàng Phình,...",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p29:para:2",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.6648420098706478,
+        "text_preview": "ệt thự.\nSa Pa bị tàn phá nhiều theo chủ trương tiêu thổ bởi cuộc kháng chiến chống Pháp năm 1947 và trong chiến tranh biên giới Việt - Trung năm 1979. Hàng ngàn ha rừng thông bao phủ thị trấn bị đốt sạch, nhiều toà biệt thự cổ do Pháp xây cũng bị phá huỷ. Vào thập niên 1990, Sa Pa được xây dựng, tái",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q03",
+    "split": "dev",
+    "question": "Nghị định nào của Toàn quyền Đông Dương đã nâng Nha Trang lên thành thị xã, và vào năm nào?",
+    "gold_source_id": "nha-trang",
+    "gold_page": 3,
+    "evidence_quote": "Đến Nghị định ngày 7 tháng 5 năm 1937 của Toàn quyền Đông Dương, Nha Trang được nâng lên thị xã (commune).",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "sa-pa:p27:para:0",
+        "document_id": "sa-pa",
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "score": 0.7833125978745359,
+        "text_preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Sa Pa, một đơn vị hành chính cấp xã thuộc tỉnh Lào Cai, Việt Nam. Sa Pa nổi tiếng với những thửa ruộng bậc thang ",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p29:para:0",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.7761089606090272,
+        "text_preview": "Năm 1897, chính quyền thuộc địa Pháp quyết định mở một cuộc điều tra về người dân tộc thiểu số miền núi vùng cao. Những đoàn điều tra đầu tiên đến Lào Cai vào năm 1898.\nMùa đông năm 1903, trong khi tiến hành đo đạc xây dựng bản đồ, đoàn thám hiểm của Sở địa lý Đông Dương đã khám phá ra cảnh quan mặt",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p23:para:3",
+        "document_id": "phu-quoc",
+        "page": 23,
+        "section": "Văn hóa",
+        "mien": "Nam",
+        "score": 0.7617724225792435,
+        "text_preview": "nh mục Gioan Trần Văn Trông, với sự giúp đỡ của 2 phó xứ là Linh mục Hải Đăng và Vinh Sơn Nguyễn Văn Cảnh. Số giáo dân hiện tại khoảng 2.000 người.",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q04",
+    "split": "dev",
+    "question": "Theo Nghị định 18-BNV ngày 27/1/1958, Nha Trang bị chia thành những đơn vị nào?",
+    "gold_source_id": "nha-trang",
+    "gold_page": 3,
+    "evidence_quote": "Ngày 27 tháng 1 năm 1958, chính quyền Ngô Đình Diệm ban hành Nghị định 18-BNV bãi bỏ quy chế thị xã, chia Nha Trang thành 2 xã là Nha Trang Đông và Nha Trang Tây thuộc quận Vĩnh Xương.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "nha-trang:p3:para:6",
+        "document_id": "nha-trang",
+        "page": 3,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.721528324898681,
+        "text_preview": "Phước Hải.\nNghị định số 553-BNV/HCĐP/NV ngày 22 tháng 8 năm 1972 đổi các khu phố thành phường.\nNghị định số 444-BNV/HCĐP/26.X ngày 3 tháng 9 năm 1974 sáp nhập các đảo Hòn Một, Hòn Cậu, Hòn Đụn, Hòn Chóp Vung, Hòn Đỏ vào phường Vĩnh Hải (quận 1) và Hòn Ngọc vào phường Vĩnh Nguyên (quận 2) của thị xã ",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "nha-trang:p4:para:2",
+        "document_id": "nha-trang",
+        "page": 4,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.6698154604654956,
+        "text_preview": "ày 30 tháng 6 năm 1989, tái lập tỉnh Khánh Hòa từ tỉnh Phú Khánh cũ, Nha Trang là tỉnh lỵ tỉnh Khánh Hòa.\nNgày 28 tháng 9 năm 2024, Ủy ban Thường vụ Quốc hội ban hành Nghị quyết số 1196/NQ-UBTVQH15 về việc sắp xếp đơn vị hành chính cấp xã của tỉnh Khánh Hòa giai đoạn 2023 – 2025 (nghị quyết có hiệu ",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "nha-trang:p3:para:3",
+        "document_id": "nha-trang",
+        "page": 3,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.6531861241834016,
+        "text_preview": "Đến Nghị định ngày 7 tháng 5 năm 1937 của Toàn quyền Đông Dương, Nha Trang được nâng lên thị xã (commune). Lúc mới thành lập, thị xã Nha Trang có 5 phường: Xương Huân là phường đệ nhất, Phương Câu là phường đệ nhị, Vạn Thạnh là phường đệ tam, Phương Sài là phường đệ tứ, Phước Hải là phường đệ ngũ.\nN",
+        "is_hit": true
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q05",
+    "split": "dev",
+    "question": "Nha Trang được nâng lên cấp thành phố trực thuộc tỉnh vào ngày nào, theo quyết định nào?",
+    "gold_source_id": "nha-trang",
+    "gold_page": 4,
+    "evidence_quote": "Ngày 30 tháng 3 năm 1977, theo quyết định số 391-CP/QĐ của Hội đồng Chính phủ nước Cộng hòa Xã hội chủ nghĩa Việt Nam, thị xã Nha Trang được nâng lên cấp thành phố trực thuộc tỉnh",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "nha-trang:p4:para:1",
+        "document_id": "nha-trang",
+        "page": 4,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.7903152704238892,
+        "text_preview": "theo quyết định số 391-CP/QĐ của Hội đồng Chính phủ nước Cộng hòa Xã hội chủ nghĩa Việt Nam, thị xã Nha Trang được nâng lên cấp thành phố trực thuộc tỉnh và là tỉnh lỵ tỉnh Phú Khánh (bao gồm hai tỉnh Phú Yên và Khánh Hòa hiện nay). Phần đất 7 xã của huyện Vĩnh Xương cũ trước đây là Vĩnh Thái, Vĩnh ",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "nha-trang:p2:para:0",
+        "document_id": "nha-trang",
+        "page": 2,
+        "section": "Từ nguyên",
+        "mien": "Trung",
+        "score": 0.7654204368591309,
+        "text_preview": "Theo nhiều nhà nghiên cứu, tên Nha Trang được hình thành do cách đọc của người Việt phỏng theo âm một địa danh Chăm vốn có trước là Aia Trang theo tiếng Chăm và Ea Trang theo tiếng Rađe (có nghĩa là \"nước Hến\", tiếng người Chăm, tức là gọi sông Cái chảy qua Nha Trang ngày nay, con sông này đổ ra biể",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "nha-trang:p2:para:1",
+        "document_id": "nha-trang",
+        "page": 2,
+        "section": "Từ nguyên",
+        "mien": "Trung",
+        "score": 0.7472638042411934,
+        "text_preview": "ào khoảng nửa sau thế kỷ 17 đã thấy có tên \"Nha Trang Môn\" (cửa Nha Trang). Trong một bản đồ khác có niên đại cuối thế kỷ 17 mang tên Giáp Ngọ Niên Bình Nam Đồ của Đoan Quận công Bùi Thế Đạt cũng thấy ghi tên \"Nha Trang Hải môn\" (cửa biển Nha Trang). Trong thư tịch cổ Việt Nam, đây có lẽ là những tà",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q06",
+    "split": "dev",
+    "question": "Phường Nha Trang (sau sắp xếp 2025) được hợp nhất từ những phường nào?",
+    "gold_source_id": "nha-trang",
+    "gold_page": 5,
+    "evidence_quote": "Phường Nha Trang được hình thành từ việc hợp nhất các phường Vạn Thạnh, Lộc Thọ, Vĩnh Nguyên, Tân Tiến và Phước Hoà.",
+    "filter": {
+      "mien": "Trung"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "nha-trang:p4:para:3",
+        "document_id": "nha-trang",
+        "page": 4,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.6690760053305667,
+        "text_preview": "Sáp nhập phường Phương Sơn vào phường Phương Sài.\nSáp nhập 2 phường: Xương Huân, Vạn Thắng vào phường Vạn Thạnh.\nThành lập phường Tân Tiến trên cơ sở 3 phường: Phước Tiến, Phước Tân, Tân Lập.\nThành phố Nha Trang lúc bấy giờ có 14 phường và 8 xã.\nNgày 16 tháng 6 năm 2025, Ủy ban Thường vụ Quốc hội ba",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "nha-trang:p3:para:6",
+        "document_id": "nha-trang",
+        "page": 3,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.6615135082876381,
+        "text_preview": "Phước Hải.\nNghị định số 553-BNV/HCĐP/NV ngày 22 tháng 8 năm 1972 đổi các khu phố thành phường.\nNghị định số 444-BNV/HCĐP/26.X ngày 3 tháng 9 năm 1974 sáp nhập các đảo Hòn Một, Hòn Cậu, Hòn Đụn, Hòn Chóp Vung, Hòn Đỏ vào phường Vĩnh Hải (quận 1) và Hòn Ngọc vào phường Vĩnh Nguyên (quận 2) của thị xã ",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p30:para:6",
+        "document_id": "sa-pa",
+        "page": 30,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.6313899598848912,
+        "text_preview": "nhà dây thép (bưu điện) phục vụ các nhu cầu điện thoại, điện báo. Nhà thờ trung tâm thị trấn được xây dựng năm 1934. Cuối những năm của thập kỷ 30 (thế kỷ trước), Sa Pa phát triển đạt đến đỉnh cao nhất của mình; vào mùa hè, Sa Pa đón đến hàng ngàn khách Âu sống và làm việc ở Việt Nam bấy giờ lên đây",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q07",
+    "split": "dev",
+    "question": "Đặc khu Phú Quốc cùng với đặc khu nào hợp thành đô thị Phú Quốc?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 6,
+    "evidence_quote": "Đặc khu Phú Quốc cùng với đặc khu Thổ Châu hợp thành đô thị Phú Quốc – đô thị loại II thuộc tỉnh An Giang.",
+    "filter": {
+      "mien": "Nam"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p6:para:0",
+        "document_id": "phu-quoc",
+        "page": 6,
+        "section": "Giới thiệu",
+        "mien": "Nam",
+        "score": 0.7792418266246526,
+        "text_preview": "Phú Quốc là một đặc khu thuộc tỉnh An Giang, Việt Nam.\nĐặc khu Phú Quốc cùng với đặc khu Thổ Châu hợp thành đô thị Phú Quốc – đô thị loại II thuộc tỉnh An Giang.",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p9:para:2",
+        "document_id": "phu-quoc",
+        "page": 9,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7480725200133027,
+        "text_preview": "hay Banteay Meas), Linh Quỳnh (Kiri Vong) và Phú Quốc (Koh Tral). Thủ phủ đặt tại Mán Khảm (tức Hà Tiên), sau đổi thành Căn Khẩu (Căn Kháo hay Căn Cáo). Tiếng đồn vang xa, lưu dân gốc Hoa từ khắp nơi trong vịnh Thái Lan xin vào đây lập nghiệp, dần dần vùng đất này trở thành một lãnh địa phồn vinh vớ",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p12:para:3",
+        "document_id": "phu-quoc",
+        "page": 12,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7351122814283035,
+        "text_preview": "Thành lập thành phố Phú Quốc thuộc tỉnh Kiên Giang trên cơ sở toàn bộ 575,29 km2 diện tích tự nhiên và 179.480 người của huyện Phú Quốc.\nThành lập phường Dương Đông trên cơ sở toàn bộ diện tích và dân số của thị trấn Dương Đông.\nThành lập phường An Thới trên cơ sở toàn bộ diện tích và dân số của thị",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q08",
+    "split": "dev",
+    "question": "Đảo Phú Quốc có diện tích bao nhiêu và dài bao nhiêu km?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 7,
+    "evidence_quote": "trong đó đảo Phú Quốc lớn nhất có diện tích 580 km2, dài 49 km",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p22:para:0",
+        "document_id": "phu-quoc",
+        "page": 22,
+        "section": "Dân số",
+        "mien": "Nam",
+        "score": 0.6991605370986624,
+        "text_preview": "Thành phố Phú Quốc có diện tích 589,27 km2 và quy mô dân số quy đổi năm 2019 là 179.480 người.\nThành phố Phú Quốc có diện tích 589,27 km2, dân số năm 2020 là 144.460 người, mật độ dân số đạt 245 người/km2.\nThành phố Phú Quốc có diện tích 589,27 km2, quy mô dân số quy đổi tính đến cuối năm 2023 là 29",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p7:para:0",
+        "document_id": "phu-quoc",
+        "page": 7,
+        "section": "Địa lý",
+        "mien": "Nam",
+        "score": 0.6915919574620764,
+        "text_preview": "Vị trí địa lý\n\nĐảo Phú Quốc nằm trong vịnh Thái Lan, phía Tây Nam của Việt Nam. Phú Quốc cách phường Rạch Giá 120 km và cách phường Hà Tiên 45 km. Nhìn trên bản đồ, Phú Quốc có hình dáng con cá đang vẫy đuôi trong vịnh Thái Lan.",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p14:para:2",
+        "document_id": "phu-quoc",
+        "page": 14,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.6877734475000767,
+        "text_preview": "của xã Dương Tơ; toàn bộ 57,90 km2 diện tích tự nhiên, quy mô dân số là 10.676 người của xã Gành Dầu và toàn bộ 62,87 km2 diện tích tự nhiên, quy mô dân số là 13.234 của xã Hàm Ninh thuộc thành phố Phú Quốc, tỉnh Kiên Giang cũ.\nĐặc khu Phú Quốc có 575,29 km2 diện tích tự nhiên và quy mô dân số là 15",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q09",
+    "split": "dev",
+    "question": "Mùa mưa ở Phú Quốc kéo dài từ tháng nào đến tháng nào, và độ ẩm trong mùa này ra sao?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 7,
+    "evidence_quote": "Mùa mưa (từ tháng 5 đến đầu tháng 10): Đảo Phú Quốc là cửa ngõ đón gió mùa Tây – Tây Nam, độ ẩm cao từ 85 – 90%.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p7:para:3",
+        "document_id": "phu-quoc",
+        "page": 7,
+        "section": "Địa lý",
+        "mien": "Nam",
+        "score": 0.7041261548845633,
+        "text_preview": "Khí hậu - Thủy văn\nThời tiết mát mẻ mang tính nhiệt đới gió mùa. Khí hậu chia hai mùa rõ rệt.\nMùa khô (từ cuối tháng 10 đến tháng 4 năm sau): Đảo Phú Quốc chịu ảnh hưởng gió tín phong bán cầu Bắc. Nhiệt độ cao nhất 35 °C vào tháng 4 và tháng 5.\nMùa mưa (từ tháng 5 đến đầu tháng 10): Đảo Phú Quốc là ",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p21:para:1",
+        "document_id": "phu-quoc",
+        "page": 21,
+        "section": "Chó Phú Quốc",
+        "mien": "Nam",
+        "score": 0.6932245858640022,
+        "text_preview": "để trú ẩn, sinh sản nếu sống ở nơi có đất rộng. Hiện tại ở Phú Quốc có trung tâm bảo tồn giống chó này với quy mô lên đến hàng trăm con. Nơi đây mở cửa cho du khách đến tham quan, xem các chú chó Phú Quốc biểu diễn các tiết mục: nhặt rác, leo tường rào, đua chó...",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p27:para:0",
+        "document_id": "sa-pa",
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "score": 0.6743627176828305,
+        "text_preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Sa Pa, một đơn vị hành chính cấp xã thuộc tỉnh Lào Cai, Việt Nam. Sa Pa nổi tiếng với những thửa ruộng bậc thang ",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q10",
+    "split": "dev",
+    "question": "Ai là người Hoa đã lập ấp và cai quản vùng đất mà sau này đổi tên thành Phú Quốc?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 9,
+    "evidence_quote": "Năm 1671, một người Hoa tên Mạc Cửu (Mạc Kính Cửu), quê ở Lôi Châu tỉnh Quảng Đông, mang cả gia đình, binh sĩ và một số sĩ phu khoảng 400 người lên thuyền rời khỏi Phúc Kiến.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p34:para:0",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.749667629659005,
+        "text_preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ cửa biển.\nSau khi nạn cướp biển được dẹp yên, vua Minh Mạng cho ba lớp lính trên giải ngũ và lập ra ba làng Thắng Nhất, Thắng Nhì, Thắng Tam. Mỗi làn",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p24:para:2",
+        "document_id": "phu-quoc",
+        "page": 24,
+        "section": "Du lịch",
+        "mien": "Nam",
+        "score": 0.7476090644104975,
+        "text_preview": "Bãi Vòng\nSuối Tranh\n11. Vinpearl Safari Phú Quốc (vườn thú bán hoang dã đầu tiên của Việt Nam)\n12. Công viên giải trí VinWonders Phú Quốc 50ha (Khu vui chơi lớn nhất Châu Á)\n13. Đảo Sim (Sim Island Phú Quốc)\n14. Cáp treo Hòn Thơm\nNgoài ra, đặc khu còn quản lý hành chính toàn bộ quần đảo An Thới, một",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p28:para:0",
+        "document_id": "sa-pa",
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "score": 0.7381118848190498,
+        "text_preview": "Tên gọi của thị xã xuất phát từ tên thị trấn Sa Pa cũ. Thị trấn này ra đời vào năm 1905, khi người Pháp phát hiện đây là địa điểm lý tưởng để xây dựng khu nghỉ mát và đã thực hiện. Tên \"Sa Pa\" là tên gọi của người dân địa phương vùng này xuất phát từ tiếng Quan thoại có nghĩa là \"bãi cát\" (Hán Việt:",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q11",
+    "split": "dev",
+    "question": "Theo bài viết, ai đã xác nhận Phú Quốc thuộc chủ quyền Việt Nam vào năm 1855?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 9,
+    "evidence_quote": "Năm 1855, Hoàng để Napoleon III của Pháp xác nhận Phú Quốc thuộc chủ quyền Việt Nam.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p34:para:2",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7292659009378126,
+        "text_preview": "Pháp thuộc (1859–1945)\nNgày 10 tháng 2 năm 1859 tức mồng 8 Tết Kỷ Mùi, quan quân nhà Nguyễn đã khai hỏa lần đầu tiên những khẩu súng thần công đặt ở pháo đài Phước Thắng, cao 30 m và cách bờ biển Bãi Trước gần 100 m, bắn vào đoàn chiến thuyền của liên quân Pháp-Tây Ban Nha do tướng Rigault de Genoui",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p9:para:6",
+        "document_id": "phu-quoc",
+        "page": 9,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7268890142440796,
+        "text_preview": "ảo Phú Quốc, đã được Mạc Thiên Tứ dâng hết cho Võ vương Nguyễn Phúc Khoát. Võ vương sáp nhập tất cả các vùng đất mới vào trấn Hà Tiên, giao cho Mạc Thiên Tứ cai trị.\nNăm 1770, nhà truyền giáo Pierre Pigneau de Béhaine (Bá Đa Lộc) đặt chân lên Phú Quốc và xác nhận cư dân ở đây sử dụng tiếng Việt để g",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p9:para:9",
+        "document_id": "phu-quoc",
+        "page": 9,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7202421856070881,
+        "text_preview": "là người Hoa tạm trú. Người dân trên đảo, ngoài trồng cây ăn trái và rau cải, họ trồng nhiều nhất là Convolvulus batatas (khoai lang). Họ nhập lúa gạo từ Kang-kao (Cảng Khẩu, Hà Tiên). Đa số dân Phu-kok làm nghề đánh cá, sống chủ yếu ở bờ Đông của đảo. Ngày 17 tháng 3 năm 1822, Crawfurd rời Phu-kok ",
+        "is_hit": true
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q12",
+    "split": "dev",
+    "question": "Thành phố Phú Quốc được công nhận là đô thị loại I theo quyết định nào, vào ngày nào?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 13,
+    "evidence_quote": "Ngày 21 tháng 1 năm 2025, Thủ tướng Chính phủ ban hành Quyết định số 199/QĐ-TTg về việc công nhận thành phố Phú Quốc là đô thị loại I, trực thuộc tỉnh Kiên Giang.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p16:para:0",
+        "document_id": "phu-quoc",
+        "page": 16,
+        "section": "Đô thị Phú Quốc",
+        "mien": "Nam",
+        "score": 0.7474879622459412,
+        "text_preview": "Ngày 24 tháng 12 năm 2025, Ủy ban Thường vụ Quốc hội ban hành Nghị quyết số 111/2025/UBTVQH15 về phân loại đô thị. Căn cứ theo Nghị quyết trên, từ ngày 01 tháng 1 năm 2026, đô thị Phú Quốc là đô thị loại II trực thuộc tỉnh An Giang.\nPhạm vi của đô thị Phú Quốc là toàn bộ thành phố Phú Quốc trước kia",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "vung-tau:p34:para:0",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7428726707176776,
+        "text_preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ cửa biển.\nSau khi nạn cướp biển được dẹp yên, vua Minh Mạng cho ba lớp lính trên giải ngũ và lập ra ba làng Thắng Nhất, Thắng Nhì, Thắng Tam. Mỗi làn",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "nha-trang:p3:para:6",
+        "document_id": "nha-trang",
+        "page": 3,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.7413823162685458,
+        "text_preview": "Phước Hải.\nNghị định số 553-BNV/HCĐP/NV ngày 22 tháng 8 năm 1972 đổi các khu phố thành phường.\nNghị định số 444-BNV/HCĐP/26.X ngày 3 tháng 9 năm 1974 sáp nhập các đảo Hòn Một, Hòn Cậu, Hòn Đụn, Hòn Chóp Vung, Hòn Đỏ vào phường Vĩnh Hải (quận 1) và Hòn Ngọc vào phường Vĩnh Nguyên (quận 2) của thị xã ",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q13",
+    "split": "dev",
+    "question": "Đặc khu Phú Quốc có diện tích tự nhiên và quy mô dân số là bao nhiêu (theo Nghị quyết 1654/NQ-UBTVQH15)?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 14,
+    "evidence_quote": "Đặc khu Phú Quốc có 575,29 km2 diện tích tự nhiên và quy mô dân số là 157.629 người.",
+    "filter": {
+      "mien": "Nam"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p34:para:7",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7081162259370889,
+        "text_preview": "dân như Viện điều dưỡng hoa tiêu Anduzer (1870), khách sạn Grand (1897), và Bạch Dinh Villa Blanche (1896). Tính đến năm 1934 Vũng Tàu có tới 48 biệt thự tư nhân, 11 biệt thự của địa ốc ngân hàng Nam Kỳ, 22 biệt thự dành riêng cho sĩ quan và hàng chục khách sạn.\nTrong vòng 10 năm, chính quyền thuộc ",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p14:para:2",
+        "document_id": "phu-quoc",
+        "page": 14,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7065399674612322,
+        "text_preview": "của xã Dương Tơ; toàn bộ 57,90 km2 diện tích tự nhiên, quy mô dân số là 10.676 người của xã Gành Dầu và toàn bộ 62,87 km2 diện tích tự nhiên, quy mô dân số là 13.234 của xã Hàm Ninh thuộc thành phố Phú Quốc, tỉnh Kiên Giang cũ.\nĐặc khu Phú Quốc có 575,29 km2 diện tích tự nhiên và quy mô dân số là 15",
+        "is_hit": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p10:para:1",
+        "document_id": "phu-quoc",
+        "page": 10,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7023861763016968,
+        "text_preview": "Dương Đông và Hàm Ninh, dân số năm 1965 là 12.449 người. Năm 1949, khi quân Trung Hoa Dân quốc thua trận trước Quân Giải phóng Nhân dân Trung Quốc, Hoàng Kiệt, 1 tướng lĩnh Quốc dân đảng, gốc tỉnh Hồ Nam, dẫn hơn 30.000 quân chạy sang Việt Nam lánh nạn. Lúc bấy giờ, thực dân Pháp cho họ ra đóng quân",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q14",
+    "split": "dev",
+    "question": "Hồ tiêu Phú Quốc tập trung trồng chủ yếu ở 3 xã nào?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 19,
+    "evidence_quote": "Với diện tích trung bình là 471 ha tập trung ở 3 xã Cửa Dương, Cửa Cạn và Dương Tơ.",
+    "filter": {
+      "section": "Phân bố"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p21:para:1",
+        "document_id": "phu-quoc",
+        "page": 21,
+        "section": "Chó Phú Quốc",
+        "mien": "Nam",
+        "score": 0.6803337335586548,
+        "text_preview": "để trú ẩn, sinh sản nếu sống ở nơi có đất rộng. Hiện tại ở Phú Quốc có trung tâm bảo tồn giống chó này với quy mô lên đến hàng trăm con. Nơi đây mở cửa cho du khách đến tham quan, xem các chú chó Phú Quốc biểu diễn các tiết mục: nhặt rác, leo tường rào, đua chó...",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p18:para:1",
+        "document_id": "phu-quoc",
+        "page": 18,
+        "section": "Đặc tính",
+        "mien": "Nam",
+        "score": 0.6695188283920288,
+        "text_preview": "ngon nhất và đắt tiền nhất.\nMột đặc tính canh tác nữa là hàng năm người trồng tiêu thường lấy những vùng đất mới xung quanh vườn bón xung quanh gốc cây (còn gọi là \"đất xây thầu\"). Cây nọc (choái) chủ yếu là lấy từ lõi của các loại cây quý như ổi rừng, kiềng kiềng, trai, chay, săn đá,... Phân bón ch",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p18:para:0",
+        "document_id": "phu-quoc",
+        "page": 18,
+        "section": "Đặc tính",
+        "mien": "Nam",
+        "score": 0.6609788739097802,
+        "text_preview": "Hồ tiêu Phú Quốc có vị thơm nồng, đặc biệt là đậm vị hơn nhiều loại hồ tiêu đến từ những vùng miền khác, trong đó phải kể đến tiêu đỏ (tiêu chín). Tiêu được người dân Phú Quốc thu hoạch từng đợt chín và chủ yếu là bằng thủ công, chọn lựa những quả chín phơi riêng gọi là tiêu chín (tiêu đỏ), những qu",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q15",
+    "split": "dev",
+    "question": "Chó Phú Quốc có những đặc điểm ngoại hình gì nổi bật?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 21,
+    "evidence_quote": "Chó Phú Quốc luôn có một bờm lông dựng đứng và xoáy trên lưng, có chân dài, dáng người thon, và rất khỏe mạnh.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p21:para:1",
+        "document_id": "phu-quoc",
+        "page": 21,
+        "section": "Chó Phú Quốc",
+        "mien": "Nam",
+        "score": 0.672783613204956,
+        "text_preview": "để trú ẩn, sinh sản nếu sống ở nơi có đất rộng. Hiện tại ở Phú Quốc có trung tâm bảo tồn giống chó này với quy mô lên đến hàng trăm con. Nơi đây mở cửa cho du khách đến tham quan, xem các chú chó Phú Quốc biểu diễn các tiết mục: nhặt rác, leo tường rào, đua chó...",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p8:para:0",
+        "document_id": "phu-quoc",
+        "page": 8,
+        "section": "Hành chính",
+        "mien": "Nam",
+        "score": 0.6705626249313354,
+        "text_preview": "Dự kiến, đặc khu Phú Quốc thành lập 7 tiểu khu mới như sau:",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p14:para:13",
+        "document_id": "phu-quoc",
+        "page": 14,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.667370080947876,
+        "text_preview": "Cửa Lấp, Đá Chồng, Dương Tơ, Đường Bào, Gành Dầu, Gành Gió, Hòn Rỏi, Hòn Thơm, Khu Tượng, Lê Bát, Ông Lang, Rạch Hàm, Rạch Tràm, Rạch Vẹm, Suối Cát, Suối Đá, Suối Lớn, Suối Mây, Xóm Mới.\nNgày 23 tháng 10 năm 2025, HĐND đặc khu Phú Quốc ban hành Nghị quyết số 21/NQ-HĐND về việc:",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q16",
+    "split": "dev",
+    "question": "Phú Quốc được xem là nơi phát tích của tôn giáo nào?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 23,
+    "evidence_quote": "Phú Quốc được xem là nơi phát tích của đạo Cao Đài.",
+    "filter": {
+      "mien": "Nam"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p6:para:0",
+        "document_id": "phu-quoc",
+        "page": 6,
+        "section": "Giới thiệu",
+        "mien": "Nam",
+        "score": 0.719078340557866,
+        "text_preview": "Phú Quốc là một đặc khu thuộc tỉnh An Giang, Việt Nam.\nĐặc khu Phú Quốc cùng với đặc khu Thổ Châu hợp thành đô thị Phú Quốc – đô thị loại II thuộc tỉnh An Giang.",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p17:para:0",
+        "document_id": "phu-quoc",
+        "page": 17,
+        "section": "Kinh tế",
+        "mien": "Nam",
+        "score": 0.7089469644113474,
+        "text_preview": "Hồ tiêu Phú Quốc\n\nHồ tiêu Phú Quốc là một loại gia vị đặc sản của đặc khu Phú Quốc, tỉnh An Giang, Việt Nam.",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p28:para:0",
+        "document_id": "sa-pa",
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "score": 0.6950565187649884,
+        "text_preview": "Tên gọi của thị xã xuất phát từ tên thị trấn Sa Pa cũ. Thị trấn này ra đời vào năm 1905, khi người Pháp phát hiện đây là địa điểm lý tưởng để xây dựng khu nghỉ mát và đã thực hiện. Tên \"Sa Pa\" là tên gọi của người dân địa phương vùng này xuất phát từ tiếng Quan thoại có nghĩa là \"bãi cát\" (Hán Việt:",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  },
+  {
+    "question_id": "q17",
+    "split": "dev",
+    "question": "Sa Pa là tên gọi của người dân địa phương, xuất phát từ tiếng gì và có nghĩa là gì?",
+    "gold_source_id": "sa-pa",
+    "gold_page": 28,
+    "evidence_quote": "Tên \"Sa Pa\" là tên gọi của người dân địa phương vùng này xuất phát từ tiếng Quan thoại có nghĩa là \"bãi cát\"",
+    "filter": {
+      "mien": "Bắc"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "sa-pa:p28:para:0",
+        "document_id": "sa-pa",
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "score": 0.7994938731042709,
+        "text_preview": "Tên gọi của thị xã xuất phát từ tên thị trấn Sa Pa cũ. Thị trấn này ra đời vào năm 1905, khi người Pháp phát hiện đây là địa điểm lý tưởng để xây dựng khu nghỉ mát và đã thực hiện. Tên \"Sa Pa\" là tên gọi của người dân địa phương vùng này xuất phát từ tiếng Quan thoại có nghĩa là \"bãi cát\" (Hán Việt:",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p28:para:1",
+        "document_id": "sa-pa",
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "score": 0.681584895990929,
+        "text_preview": "c tên đó là loạt tên xã theo tiếng H'Mông như Lao Chải, San Sả Hồ, Sử Pán, Suối Thầu, Tả Giàng Phình,...",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p29:para:2",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.6782168735667954,
+        "text_preview": "ệt thự.\nSa Pa bị tàn phá nhiều theo chủ trương tiêu thổ bởi cuộc kháng chiến chống Pháp năm 1947 và trong chiến tranh biên giới Việt - Trung năm 1979. Hàng ngàn ha rừng thông bao phủ thị trấn bị đốt sạch, nhiều toà biệt thự cổ do Pháp xây cũng bị phá huỷ. Vào thập niên 1990, Sa Pa được xây dựng, tái",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q18",
+    "split": "dev",
+    "question": "Tuyến đường sắt nào hoàn thành năm 1920 giúp Sa Pa trở thành 'thủ đô mùa hè của Bắc Kỳ'?",
+    "gold_source_id": "sa-pa",
+    "gold_page": 29,
+    "evidence_quote": "Năm 1920, tuyến đường sắt Hà Nội - Lào Cai hoàn thành, Sa Pa được xem như thủ đô mùa hè của Bắc Kỳ.",
+    "filter": {
+      "mien": "Bắc"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "sa-pa:p27:para:0",
+        "document_id": "sa-pa",
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "score": 0.7528996762156872,
+        "text_preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Sa Pa, một đơn vị hành chính cấp xã thuộc tỉnh Lào Cai, Việt Nam. Sa Pa nổi tiếng với những thửa ruộng bậc thang ",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p30:para:1",
+        "document_id": "sa-pa",
+        "page": 30,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.7515378294542039,
+        "text_preview": "ú và Suối Thầu thành xã Mường Bo.\nHợp nhất hai xã Hầu Thào và Sử Pán thành xã Mường Hoa.\nHợp nhất hai xã Bản Khoang và Tả Giàng Phìn thành xã Ngũ Chỉ Sơn.\nHợp nhất hai xã Thanh Kim và Bản Phùng thành xã Thanh Bình.\nSau khi sắp xếp, sáp nhập và điều chỉnh địa giới các đơn vị hành chính, thị xã Sa Pa ",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p29:para:1",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.7512971459272926,
+        "text_preview": "Năm 1905, người Pháp đã thu thập được những thông tin đầu tiên về địa lý, khí hậu, thảm thực vật,... Sa Pa bắt đầu được biết tới với không khí mát mẻ, trong lành và cảnh quan đẹp. Năm 1909, một khu điều dưỡng được xây dựng. Năm 1917, một văn phòng du lịch được thành lập ở Sa Pa và một năm sau, người",
+        "is_hit": true
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q19",
+    "split": "dev",
+    "question": "Sa Pa bị tàn phá nặng trong những cuộc chiến tranh/sự kiện nào?",
+    "gold_source_id": "sa-pa",
+    "gold_page": 29,
+    "evidence_quote": "Sa Pa bị tàn phá nhiều theo chủ trương tiêu thổ bởi cuộc kháng chiến chống Pháp năm 1947 và trong chiến tranh biên giới Việt - Trung năm 1979.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "sa-pa:p29:para:2",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.7269573537162173,
+        "text_preview": "ệt thự.\nSa Pa bị tàn phá nhiều theo chủ trương tiêu thổ bởi cuộc kháng chiến chống Pháp năm 1947 và trong chiến tranh biên giới Việt - Trung năm 1979. Hàng ngàn ha rừng thông bao phủ thị trấn bị đốt sạch, nhiều toà biệt thự cổ do Pháp xây cũng bị phá huỷ. Vào thập niên 1990, Sa Pa được xây dựng, tái",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p28:para:0",
+        "document_id": "sa-pa",
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "score": 0.6886786222457886,
+        "text_preview": "Tên gọi của thị xã xuất phát từ tên thị trấn Sa Pa cũ. Thị trấn này ra đời vào năm 1905, khi người Pháp phát hiện đây là địa điểm lý tưởng để xây dựng khu nghỉ mát và đã thực hiện. Tên \"Sa Pa\" là tên gọi của người dân địa phương vùng này xuất phát từ tiếng Quan thoại có nghĩa là \"bãi cát\" (Hán Việt:",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p30:para:4",
+        "document_id": "sa-pa",
+        "page": 30,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.680972158908844,
+        "text_preview": "địa bàn tranh giành lẫn nhau của các băng đảng có vũ trang, trong đó có băng Cờ Vàng và băng Cờ Trắng. Các băng này cai quản con đường thông thương trên sông Hồng. Muối từ miền Biển Việt Nam, á phiện vùng Vân Nam, gạo giống mới, vải vóc, hàng hoá là những mục tiêu cướp bóc chính của chúng. Giữa nhữn",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q20",
+    "split": "dev",
+    "question": "Sau khi sắp xếp năm 2019, thị xã Sa Pa có bao nhiêu phường và bao nhiêu xã?",
+    "gold_source_id": "sa-pa",
+    "gold_page": 30,
+    "evidence_quote": "Sau khi sắp xếp, sáp nhập và điều chỉnh địa giới các đơn vị hành chính, thị xã Sa Pa có 6 phường và 10 xã như hiện nay.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "sa-pa:p30:para:1",
+        "document_id": "sa-pa",
+        "page": 30,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.7141000373244241,
+        "text_preview": "ú và Suối Thầu thành xã Mường Bo.\nHợp nhất hai xã Hầu Thào và Sử Pán thành xã Mường Hoa.\nHợp nhất hai xã Bản Khoang và Tả Giàng Phìn thành xã Ngũ Chỉ Sơn.\nHợp nhất hai xã Thanh Kim và Bản Phùng thành xã Thanh Bình.\nSau khi sắp xếp, sáp nhập và điều chỉnh địa giới các đơn vị hành chính, thị xã Sa Pa ",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "nha-trang:p4:para:3",
+        "document_id": "nha-trang",
+        "page": 4,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Trung",
+        "score": 0.697151619365716,
+        "text_preview": "Sáp nhập phường Phương Sơn vào phường Phương Sài.\nSáp nhập 2 phường: Xương Huân, Vạn Thắng vào phường Vạn Thạnh.\nThành lập phường Tân Tiến trên cơ sở 3 phường: Phước Tiến, Phước Tân, Tân Lập.\nThành phố Nha Trang lúc bấy giờ có 14 phường và 8 xã.\nNgày 16 tháng 6 năm 2025, Ủy ban Thường vụ Quốc hội ba",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p27:para:0",
+        "document_id": "sa-pa",
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "score": 0.6938827998777867,
+        "text_preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Sa Pa, một đơn vị hành chính cấp xã thuộc tỉnh Lào Cai, Việt Nam. Sa Pa nổi tiếng với những thửa ruộng bậc thang ",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q21",
+    "split": "test",
+    "question": "Vũng Tàu hiện nay là đơn vị hành chính cấp xã thuộc đâu?",
+    "gold_source_id": "vung-tau",
+    "gold_page": 31,
+    "evidence_quote": "Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Vũng Tàu, một đơn vị hành chính cấp xã thuộc Thành phố Hồ Chí Minh, Việt Nam.",
+    "filter": {
+      "mien": "Nam"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p33:para:5",
+        "document_id": "vung-tau",
+        "page": 33,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7700197696685791,
+        "text_preview": "năm vết thương của Chúa\" để chỉ cảnh tượng năm đỉnh núi khi nhìn từ xa bờ.\nNơi đây có thể cung cấp nước ngọt, củi đốt và cả gỗ tốt để làm cột buồm cho những chuyến hải trình tiếp theo.\nTừ năm 1775, tàu thuyền của Bồ Đào Nha và Pháp ra vào vùng biển Vũng Tàu để buôn bán, trao đổi hàng hóa, và từ đấy ",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "vung-tau:p31:para:0",
+        "document_id": "vung-tau",
+        "page": 31,
+        "section": "Giới thiệu",
+        "mien": "Nam",
+        "score": 0.7685407400131226,
+        "text_preview": "Vũng Tàu là một địa danh tại miền Nam Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Vũng Tàu, một đơn vị hành chính cấp xã thuộc Thành phố Hồ Chí Minh, Việt Nam.\nNgoài ra, địa danh này hiện này ",
+        "is_hit": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "vung-tau:p34:para:6",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7590173482894897,
+        "text_preview": "hành chính độc lập. Ngày 14 tháng 1 năm 1899 thành phố tự trị Cap Saint Jacques thành lập tổng Vũng Tàu gồm 7 xã.\nChính quyền bảo hộ gấp rút quy hoạch trung tâm hành chính ở Vũng Tàu dọc theo Bãi Trước. Các công sở đua nhau mọc lên như Nhà dây thép, Phòng hoa tiêu, Nhà Đoan, Trạm kiểm dịch, Hải đăng",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q22",
+    "split": "test",
+    "question": "Theo Phủ biên tạp lục (1776) của Lê Quý Đôn, Vũng Tàu được miêu tả như thế nào?",
+    "gold_source_id": "vung-tau",
+    "gold_page": 32,
+    "evidence_quote": "Đầu địa giới Gia Định là xứ Vũng Tàu, nơi hải đảo có dân cư.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p32:para:0",
+        "document_id": "vung-tau",
+        "page": 32,
+        "section": "Nguồn gốc",
+        "mien": "Nam",
+        "score": 0.6830242058009856,
+        "text_preview": "Trong bộ Phủ biên tạp lục (chữ Hán: 撫邊雜錄) năm 1776 của Lê Quý Đôn có nhắc đến bán đảo Vũng Tàu: \"Đầu địa giới Gia Định là xứ Vũng Tàu, nơi hải đảo có dân cư.\" Tác phẩm Đại Nam nhất thống chí (chữ Hán: 大南一統志) thời nhà Nguyễn có ghi chép lại: \"... trong có vũng lớn gọi là Vũng Tàu, ngày để che chở cho",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "nha-trang:p2:para:0",
+        "document_id": "nha-trang",
+        "page": 2,
+        "section": "Từ nguyên",
+        "mien": "Trung",
+        "score": 0.6495256036802778,
+        "text_preview": "Theo nhiều nhà nghiên cứu, tên Nha Trang được hình thành do cách đọc của người Việt phỏng theo âm một địa danh Chăm vốn có trước là Aia Trang theo tiếng Chăm và Ea Trang theo tiếng Rađe (có nghĩa là \"nước Hến\", tiếng người Chăm, tức là gọi sông Cái chảy qua Nha Trang ngày nay, con sông này đổ ra biể",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "nha-trang:p2:para:1",
+        "document_id": "nha-trang",
+        "page": 2,
+        "section": "Từ nguyên",
+        "mien": "Trung",
+        "score": 0.6356677251258224,
+        "text_preview": "ào khoảng nửa sau thế kỷ 17 đã thấy có tên \"Nha Trang Môn\" (cửa Nha Trang). Trong một bản đồ khác có niên đại cuối thế kỷ 17 mang tên Giáp Ngọ Niên Bình Nam Đồ của Đoan Quận công Bùi Thế Đạt cũng thấy ghi tên \"Nha Trang Hải môn\" (cửa biển Nha Trang). Trong thư tịch cổ Việt Nam, đây có lẽ là những tà",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q23",
+    "split": "test",
+    "question": "Người Pháp gọi Vũng Tàu bằng tên gì từ năm 1775, và tên đó có nghĩa là gì?",
+    "gold_source_id": "vung-tau",
+    "gold_page": 33,
+    "evidence_quote": "người Pháp gọi Vũng Tàu với tên Cap Saint-Jacques (nghĩa là \"Mũi đất của Thánh Giacôbê\").",
+    "filter": {
+      "mien": "Nam"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p33:para:5",
+        "document_id": "vung-tau",
+        "page": 33,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.6989419043694804,
+        "text_preview": "năm vết thương của Chúa\" để chỉ cảnh tượng năm đỉnh núi khi nhìn từ xa bờ.\nNơi đây có thể cung cấp nước ngọt, củi đốt và cả gỗ tốt để làm cột buồm cho những chuyến hải trình tiếp theo.\nTừ năm 1775, tàu thuyền của Bồ Đào Nha và Pháp ra vào vùng biển Vũng Tàu để buôn bán, trao đổi hàng hóa, và từ đấy ",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p28:para:0",
+        "document_id": "sa-pa",
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "score": 0.6770554377403606,
+        "text_preview": "Tên gọi của thị xã xuất phát từ tên thị trấn Sa Pa cũ. Thị trấn này ra đời vào năm 1905, khi người Pháp phát hiện đây là địa điểm lý tưởng để xây dựng khu nghỉ mát và đã thực hiện. Tên \"Sa Pa\" là tên gọi của người dân địa phương vùng này xuất phát từ tiếng Quan thoại có nghĩa là \"bãi cát\" (Hán Việt:",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "sa-pa:p29:para:2",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.6561156530173456,
+        "text_preview": "ệt thự.\nSa Pa bị tàn phá nhiều theo chủ trương tiêu thổ bởi cuộc kháng chiến chống Pháp năm 1947 và trong chiến tranh biên giới Việt - Trung năm 1979. Hàng ngàn ha rừng thông bao phủ thị trấn bị đốt sạch, nhiều toà biệt thự cổ do Pháp xây cũng bị phá huỷ. Vào thập niên 1990, Sa Pa được xây dựng, tái",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q24",
+    "split": "test",
+    "question": "Vua nào đã cho giải ngũ ba lớp lính và lập ra ba làng Thắng Nhất, Thắng Nhì, Thắng Tam ở Vũng Tàu?",
+    "gold_source_id": "vung-tau",
+    "gold_page": 34,
+    "evidence_quote": "vua Minh Mạng cho ba lớp lính trên giải ngũ và lập ra ba làng Thắng Nhất, Thắng Nhì, Thắng Tam.",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p34:para:0",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7120923571531572,
+        "text_preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ cửa biển.\nSau khi nạn cướp biển được dẹp yên, vua Minh Mạng cho ba lớp lính trên giải ngũ và lập ra ba làng Thắng Nhất, Thắng Nhì, Thắng Tam. Mỗi làn",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "vung-tau:p31:para:0",
+        "document_id": "vung-tau",
+        "page": 31,
+        "section": "Giới thiệu",
+        "mien": "Nam",
+        "score": 0.6853545904159546,
+        "text_preview": "Vũng Tàu là một địa danh tại miền Nam Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Vũng Tàu, một đơn vị hành chính cấp xã thuộc Thành phố Hồ Chí Minh, Việt Nam.\nNgoài ra, địa danh này hiện này ",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "vung-tau:p32:para:0",
+        "document_id": "vung-tau",
+        "page": 32,
+        "section": "Nguồn gốc",
+        "mien": "Nam",
+        "score": 0.6825681517977636,
+        "text_preview": "Trong bộ Phủ biên tạp lục (chữ Hán: 撫邊雜錄) năm 1776 của Lê Quý Đôn có nhắc đến bán đảo Vũng Tàu: \"Đầu địa giới Gia Định là xứ Vũng Tàu, nơi hải đảo có dân cư.\" Tác phẩm Đại Nam nhất thống chí (chữ Hán: 大南一統志) thời nhà Nguyễn có ghi chép lại: \"... trong có vũng lớn gọi là Vũng Tàu, ngày để che chở cho",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q25",
+    "split": "test",
+    "question": "Sự kiện ngày 10 tháng 2 năm 1859 tại pháo đài Phước Thắng liên quan đến ai?",
+    "gold_source_id": "vung-tau",
+    "gold_page": 34,
+    "evidence_quote": "quan quân nhà Nguyễn đã khai hỏa lần đầu tiên những khẩu súng thần công đặt ở pháo đài Phước Thắng, cao 30 m và cách bờ biển Bãi Trước gần 100 m, bắn vào đoàn chiến thuyền của liên quân Pháp-Tây Ban Nha do tướng Rigault de Genouilly chỉ huy",
+    "filter": null,
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "vung-tau:p34:para:2",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.7537135628632688,
+        "text_preview": "Pháp thuộc (1859–1945)\nNgày 10 tháng 2 năm 1859 tức mồng 8 Tết Kỷ Mùi, quan quân nhà Nguyễn đã khai hỏa lần đầu tiên những khẩu súng thần công đặt ở pháo đài Phước Thắng, cao 30 m và cách bờ biển Bãi Trước gần 100 m, bắn vào đoàn chiến thuyền của liên quân Pháp-Tây Ban Nha do tướng Rigault de Genoui",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p29:para:0",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.7168754935264638,
+        "text_preview": "Năm 1897, chính quyền thuộc địa Pháp quyết định mở một cuộc điều tra về người dân tộc thiểu số miền núi vùng cao. Những đoàn điều tra đầu tiên đến Lào Cai vào năm 1898.\nMùa đông năm 1903, trong khi tiến hành đo đạc xây dựng bản đồ, đoàn thám hiểm của Sở địa lý Đông Dương đã khám phá ra cảnh quan mặt",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "vung-tau:p34:para:0",
+        "document_id": "vung-tau",
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "score": 0.714746654033666,
+        "text_preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ cửa biển.\nSau khi nạn cướp biển được dẹp yên, vua Minh Mạng cho ba lớp lính trên giải ngũ và lập ra ba làng Thắng Nhất, Thắng Nhì, Thắng Tam. Mỗi làn",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q26",
+    "split": "test",
+    "question": "Theo phần Lịch sử của Phú Quốc, Nghị quyết nào (có hiệu lực 12/6/2025) đã sáp nhập tỉnh Kiên Giang vào tỉnh An Giang?",
+    "gold_source_id": "phu-quoc",
+    "gold_page": 13,
+    "evidence_quote": "Ngày 12 tháng 6 năm 2025, Quốc hội ban hành Nghị quyết số 202/2025/QH15 về việc sắp xếp đơn vị hành chính cấp tỉnh (nghị quyết có hiệu lực từ ngày 12 tháng 6 năm 2025). Theo đó, sáp nhập tỉnh Kiên Giang vào tỉnh An Giang.",
+    "filter": {
+      "mien": "Nam"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "phu-quoc:p13:para:3",
+        "document_id": "phu-quoc",
+        "page": 13,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7521237282679256,
+        "text_preview": "Ngày 12 tháng 6 năm 2025, Quốc hội ban hành Nghị quyết số 202/2025/QH15 về việc sắp xếp đơn vị hành chính cấp tỉnh (nghị quyết có hiệu lực từ ngày 12 tháng 6 năm 2025). Theo đó, sáp nhập tỉnh Kiên Giang vào tỉnh An Giang.\nNgày 16 tháng 6 năm 2025:",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "phu-quoc:p12:para:4",
+        "document_id": "phu-quoc",
+        "page": 12,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "score": 0.7258819341659546,
+        "text_preview": "tỉnh Kiên Giang nằm ở vịnh Thái Lan, là thành phố đảo đầu tiên và duy nhất được thành lập tại Việt Nam.\nNgày 15 tháng 3 năm 2021, UBND tỉnh Kiên Giang ban hành Quyết định số 673/QĐ-UBND về việc:",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p16:para:0",
+        "document_id": "phu-quoc",
+        "page": 16,
+        "section": "Đô thị Phú Quốc",
+        "mien": "Nam",
+        "score": 0.7106218338012695,
+        "text_preview": "Ngày 24 tháng 12 năm 2025, Ủy ban Thường vụ Quốc hội ban hành Nghị quyết số 111/2025/UBTVQH15 về phân loại đô thị. Căn cứ theo Nghị quyết trên, từ ngày 01 tháng 1 năm 2026, đô thị Phú Quốc là đô thị loại II trực thuộc tỉnh An Giang.\nPhạm vi của đô thị Phú Quốc là toàn bộ thành phố Phú Quốc trước kia",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": true,
+    "hit_at_3": true
+  },
+  {
+    "question_id": "q27",
+    "split": "test",
+    "question": "Sa Pa nằm ở độ cao bao nhiêu mét, theo phần lịch sử?",
+    "gold_source_id": "sa-pa",
+    "gold_page": 30,
+    "evidence_quote": "Nằm ở độ cao 1.500m trên lừng chừng núi, Sa Pa được biết đến từ năm 1901.",
+    "filter": {
+      "mien": "Bắc"
+    },
+    "top_k": [
+      {
+        "rank": 1,
+        "chunk_id": "sa-pa:p27:para:0",
+        "document_id": "sa-pa",
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "score": 0.7136565021481227,
+        "text_preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này được dùng chính thức để chỉ đến phường Sa Pa, một đơn vị hành chính cấp xã thuộc tỉnh Lào Cai, Việt Nam. Sa Pa nổi tiếng với những thửa ruộng bậc thang ",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "sa-pa:p29:para:0",
+        "document_id": "sa-pa",
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "score": 0.7090481693119914,
+        "text_preview": "Năm 1897, chính quyền thuộc địa Pháp quyết định mở một cuộc điều tra về người dân tộc thiểu số miền núi vùng cao. Những đoàn điều tra đầu tiên đến Lào Cai vào năm 1898.\nMùa đông năm 1903, trong khi tiến hành đo đạc xây dựng bản đồ, đoàn thám hiểm của Sở địa lý Đông Dương đã khám phá ra cảnh quan mặt",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "phu-quoc:p23:para:1",
+        "document_id": "phu-quoc",
+        "page": 23,
+        "section": "Văn hóa",
+        "mien": "Nam",
+        "score": 0.6977100192135596,
+        "text_preview": "ương Đông thuộc Hội Thánh Cao Đài Tòa Thánh Tây Ninh, hai là Thánh thất Cao Đài Hội Thánh thuộc phái Cao Đài Chiếu Minh Tam Thanh Vô Vi.\nPhú Quốc này trước đây có một số nhà nguyện, nhà thờ: Khoảng năm 1930, một số giáo dân miền Bắc vào đảo này làm đồn điền cao su ở gần Bãi Khem. 2 linh mục người Ma",
+        "is_hit": false
+      }
+    ],
+    "hit_at_1": false,
+    "hit_at_3": false
+  }
+]

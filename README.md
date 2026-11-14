@@ -45,3 +45,38 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+---
+
+## Bài làm của Vũ Tiến Hùng (2A202603882) — cách chạy
+
+Corpus: 4 bài Wikipedia tiếng Việt — Nha Trang, Phú Quốc, Sa Pa, Vũng Tàu (CC BY-SA 4.0/GFDL),
+34 unit / 52.351 ký tự (xem [data/manifest.json](data/manifest.json)). Metadata filter: `mien`
+(Bắc/Trung/Nam). 27 câu benchmark ở [benchmark/questions.json](benchmark/questions.json)
+(20 dev / 7 test, 11 câu có filter). Code pipeline ở [starter/src/](starter/src/).
+
+```bash
+cd starter
+python -m venv .venv
+.venv\Scripts\Activate.ps1          # Windows PowerShell
+pip install -r requirements.txt     # psycopg, pypdf, python-dotenv, sentence-transformers, torch
+Copy-Item .env.example .env         # giữ nguyên, không cần API key (dùng model local)
+
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py       # kiểm tra hạ tầng
+
+# (một lần) tải 4 bài Wikipedia sạch (plaintext qua MediaWiki API) rồi tách thành corpus
+python scripts/fetch_vn_wiki.py
+python scripts/build_corpus.py
+python -I scripts/verify_benchmark.py   # kiểm chứng evidence_quote + filter của cả 27 câu
+
+python -m src.run                   # chạy pipeline thật: embed + lưu pgvector + benchmark 3 chiến lược
+python scripts/sample_coherence.py  # lấy mẫu 10 vị trí page 1-10 cho coherence (đã chấm ở results/manual_audit.md)
+```
+
+Kết quả: `starter/results/run_meta.json`, `summary.json`, `trace_{a,b,c}.json`, `manual_audit.md`
+(audit thủ công 5 khía cạnh). Báo cáo cá nhân đầy đủ:
+[report/individual/2A202603882_VuTienHung.md](report/individual/2A202603882_VuTienHung.md).
+Experiment log: [artifacts/experiment_log.csv](artifacts/experiment_log.csv).
+
+Chi phí: $0 (embedding model chạy local, `sentence-transformers/all-MiniLM-L6-v2`, không gọi API trả phí).

@@ -1,0 +1,156 @@
+[
+  {
+    "qid": "q21",
+    "gold_page": 31,
+    "filter": {
+      "mien": "Nam"
+    },
+    "hit1": true,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 31,
+        "section": "Giới thiệu",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "Vũng Tàu là một địa danh tại miền Nam Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này"
+      },
+      {
+        "page": 30,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "is_hit": false,
+        "preview": "về việc Sửa đổi, bổ sung một số điều của Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam. Theo đó, kết thúc hoạt động của đơn vị hành chính cấp huyệ"
+      },
+      {
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "is_hit": false,
+        "preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này đư"
+      }
+    ]
+  },
+  {
+    "qid": "q22",
+    "gold_page": 32,
+    "filter": null,
+    "hit1": true,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 32,
+        "section": "Nguồn gốc",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "Trong bộ Phủ biên tạp lục (chữ Hán: 撫邊雜錄) năm 1776 của Lê Quý Đôn có nhắc đến bán đảo Vũng Tàu: \"Đầu địa giới Gia Định là xứ Vũng Tàu, nơi hải đảo có "
+      },
+      {
+        "page": 2,
+        "section": "Từ nguyên",
+        "mien": "Trung",
+        "is_hit": false,
+        "preview": "Theo nhiều nhà nghiên cứu, tên Nha Trang được hình thành do cách đọc của người Việt phỏng theo âm một địa danh Chăm vốn có trước là Aia Trang theo tiế"
+      },
+      {
+        "page": 33,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "vùng biển Vũng Tàu để buôn bán, trao đổi hàng hóa, và từ đấy người Pháp gọi Vũng Tàu với tên Cap Saint-Jacques (nghĩa là \"Mũi đất của Thánh Giacôbê\")."
+      }
+    ]
+  },
+  {
+    "qid": "q23",
+    "gold_page": 33,
+    "filter": {
+      "mien": "Nam"
+    },
+    "hit1": true,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 33,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "vùng biển Vũng Tàu để buôn bán, trao đổi hàng hóa, và từ đấy người Pháp gọi Vũng Tàu với tên Cap Saint-Jacques (nghĩa là \"Mũi đất của Thánh Giacôbê\")."
+      },
+      {
+        "page": 28,
+        "section": "Nguồn gốc",
+        "mien": "Bắc",
+        "is_hit": false,
+        "preview": "Tên gọi của thị xã xuất phát từ tên thị trấn Sa Pa cũ. Thị trấn này ra đời vào năm 1905, khi người Pháp phát hiện đây là địa điểm lý tưởng để xây dựng"
+      },
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "ôi sẽ không ngừng sử dụng một cách có lợi, ngay khi chúng tôi lắp đặt theo cách hoàn thiện hơn.Vào năm 1862, một ngọn hải đăng được xây dựng trên đỉnh"
+      }
+    ]
+  },
+  {
+    "qid": "q24",
+    "gold_page": 34,
+    "filter": null,
+    "hit1": false,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "àng Thắng Nhất, Thắng Nhì, Thắng Tam, từ Bà Rịa, Long Sơn, từ Cần Thơ và nhiều địa phương khác."
+      },
+      {
+        "page": 9,
+        "section": "Lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "An Giang (nơi có núi Chân Sum).), Sài Mạt (Cheal Meas hay Banteay Meas) và Linh Quỳnh (Kiri Vong).\n5 phủ này là vùng duyên hải (ven bờ Vịnh Thái Lan) "
+      },
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ"
+      }
+    ]
+  },
+  {
+    "qid": "q25",
+    "gold_page": 34,
+    "filter": null,
+    "hit1": false,
+    "hit3": false,
+    "top3": [
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "àng Thắng Nhất, Thắng Nhì, Thắng Tam, từ Bà Rịa, Long Sơn, từ Cần Thơ và nhiều địa phương khác."
+      },
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ"
+      },
+      {
+        "page": 27,
+        "section": "Giới thiệu",
+        "mien": "Bắc",
+        "is_hit": false,
+        "preview": "Sa Pa là một địa danh tại miền Bắc Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này đư"
+      }
+    ]
+  }
+]

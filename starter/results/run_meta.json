@@ -1,0 +1,44 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "vector_store": "pgvector 0.8.7 (PostgreSQL 16, Docker, metric=cosine)",
+  "corpus_units": 34,
+  "strategies": {
+    "a": {
+      "chunking": "fixed_size(500,50)",
+      "filter_on_search": false,
+      "n_chunks": 132,
+      "total_chars": 57213,
+      "min_len": 54,
+      "max_len": 500,
+      "avg_len": 433.4,
+      "ingest_seconds": 13.99,
+      "embedding_cost_usd": 0.0,
+      "stored_count_after_reload_check": 132
+    },
+    "b": {
+      "chunking": "by_paragraph(max=500)",
+      "filter_on_search": false,
+      "n_chunks": 129,
+      "total_chars": 52273,
+      "min_len": 11,
+      "max_len": 500,
+      "avg_len": 405.2,
+      "ingest_seconds": 9.87,
+      "embedding_cost_usd": 0.0,
+      "stored_count_after_reload_check": 129
+    },
+    "c": {
+      "chunking": "by_paragraph(max=500)",
+      "filter_on_search": true,
+      "n_chunks": 129,
+      "total_chars": 52273,
+      "min_len": 11,
+      "max_len": 500,
+      "avg_len": 405.2,
+      "ingest_seconds": 8.63,
+      "embedding_cost_usd": 0.0,
+      "stored_count_after_reload_check": 129
+    }
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "license_or_permission": "Wikipedia tiếng Việt (vi.wikipedia.org), nội dung văn bản theo giấy phép CC BY-SA 4.0 và GFDL; được phép sao chép/sửa đổi/tái phân phối nếu ghi nguồn (xem https://vi.wikipedia.org/wiki/Wikipedia:Bản_quyền).",
+  "accessed_at": "2026-11-14",
+  "pagination_rule": "Nguồn là 4 bài Wikipedia tiếng Việt (văn bản thuần, không có số trang cố định). Lấy nguyên văn phần nội dung chính qua MediaWiki API (action=query, prop=extracts, explaintext=1) bằng scripts/fetch_vn_wiki.py, loại các mục không phải nội dung (Hình ảnh, Chú thích, Xem thêm, Tham khảo, Liên kết ngoài). Mỗi mục (heading cấp 2 '== ... ==') được chia tuần tự thành các unit độc lập >=1500 ký tự chuẩn hóa (theo đoạn, không chồng lấn, không nhân bản). Số unit (page) đánh số liên tục qua 4 bài.",
+  "sources": [
+    {
+      "source_id": "nha-trang",
+      "title": "Nha Trang",
+      "source_path_or_url": "https://vi.wikipedia.org/wiki/Nha%20Trang",
+      "mien": "Trung",
+      "unit_count": 5,
+      "char_count": 6675
+    },
+    {
+      "source_id": "phu-quoc",
+      "title": "Phú Quốc",
+      "source_path_or_url": "https://vi.wikipedia.org/wiki/Ph%C3%BA%20Qu%E1%BB%91c",
+      "mien": "Nam",
+      "unit_count": 21,
+      "char_count": 32642
+    },
+    {
+      "source_id": "sa-pa",
+      "title": "Sa Pa",
+      "source_path_or_url": "https://vi.wikipedia.org/wiki/Sa%20Pa",
+      "mien": "Bắc",
+      "unit_count": 4,
+      "char_count": 7219
+    },
+    {
+      "source_id": "vung-tau",
+      "title": "Vũng Tàu",
+      "source_path_or_url": "https://vi.wikipedia.org/wiki/V%C5%A9ng%20T%C3%A0u",
+      "mien": "Nam",
+      "unit_count": 4,
+      "char_count": 7147
+    }
+  ],
+  "unit_count": 34,
+  "total_chars": 52351,
+  "mien_values": [
+    "Bắc",
+    "Nam",
+    "Trung"
+  ],
+  "sections": [
+    "Chó Phú Quốc",
+    "Danh nhân",
+    "Du lịch",
+    "Dân số",
+    "Giao thông",
+    "Giống và năng suất",
+    "Giới thiệu",
+    "Hành chính",
+    "Kinh tế",
+    "Lịch sử",
+    "Nguồn gốc",
+    "Những thay đổi trong lịch sử",
+    "Phân bố",
+    "Từ nguyên",
+    "Văn hóa",
+    "Đô thị Phú Quốc",
+    "Đặc tính",
+    "Địa lý"
+  ],
+  "units": [
+    {
+      "page": 1,
+      "document_id": "nha-trang",
+      "section": "Giới thiệu",
+      "mien": "Trung",
+      "char_count": 264
+    },
+    {
+      "page": 2,
+      "document_id": "nha-trang",
+      "section": "Từ nguyên",
+      "mien": "Trung",
+      "char_count": 984
+    },
+    {
+      "page": 3,
+      "document_id": "nha-trang",
+      "section": "Những thay đổi trong lịch sử",
+      "mien": "Trung",
+      "char_count": 2838
+    },
+    {
+      "page": 4,
+      "document_id": "nha-trang",
+      "section": "Những thay đổi trong lịch sử",
+      "mien": "Trung",
+      "char_count": 1855
+    },
+    {
+      "page": 5,
+      "document_id": "nha-trang",
+      "section": "Những thay đổi trong lịch sử",
+      "mien": "Trung",
+      "char_count": 533
+    },
+    {
+      "page": 6,
+      "document_id": "phu-quoc",
+      "section": "Giới thiệu",
+      "mien": "Nam",
+      "char_count": 161
+    },
+    {
+      "page": 7,
+      "document_id": "phu-quoc",
+      "section": "Địa lý",
+      "mien": "Nam",
+      "char_count": 1315
+    },
+    {
+      "page": 8,
+      "document_id": "phu-quoc",
+      "section": "Hành chính",
+      "mien": "Nam",
+      "char_count": 59
+    },
+    {
+      "page": 9,
+      "document_id": "phu-quoc",
+      "section": "Lịch sử",
+      "mien": "Nam",
+      "char_count": 5578
+    },
+    {
+      "page": 10,
+      "document_id": "phu-quoc",
+      "section": "Lịch sử",
+      "mien": "Nam",
+      "char_count": 2227
+    },
+    {
+      "page": 11,
+      "document_id": "phu-quoc",
+      "section": "Lịch sử",
+      "mien": "Nam",
+      "char_count": 2109
+    },
+    {
+      "page": 12,
+      "document_id": "phu-quoc",
+      "section": "Lịch sử",
+      "mien": "Nam",
+      "char_count": 1921
+    },
+    {
+      "page": 13,
+      "document_id": "phu-quoc",
+      "section": "Lịch sử",
+      "mien": "Nam",
+      "char_count": 1622
+    },
+    {
+      "page": 14,
+      "document_id": "phu-quoc",
+      "section": "Lịch sử",
+      "mien": "Nam",
+      "char_count": 6683
+    },
+    {
+      "page": 15,
+      "document_id": "phu-quoc",
+      "section": "Lịch sử",
+      "mien": "Nam",
+      "char_count": 3340
+    },
+    {
+      "page": 16,
+      "document_id": "phu-quoc",
+      "section": "Đô thị Phú Quốc",
+      "mien": "Nam",
+      "char_count": 349
+    },
+    {
+      "page": 17,
+      "document_id": "phu-quoc",
+      "section": "Kinh tế",
+      "mien": "Nam",
+      "char_count": 108
+    },
+    {
+      "page": 18,
+      "document_id": "phu-quoc",
+      "section": "Đặc tính",
+      "mien": "Nam",
+      "char_count": 1175
+    },
+    {
+      "page": 19,
+      "document_id": "phu-quoc",
+      "section": "Phân bố",
+      "mien": "Nam",
+      "char_count": 371
+    },
+    {
+      "page": 20,
+      "document_id": "phu-quoc",
+      "section": "Giống và năng suất",
+      "mien": "Nam",
+      "char_count": 400
+    },
+    {
+      "page": 21,
+      "document_id": "phu-quoc",
+      "section": "Chó Phú Quốc",
+      "mien": "Nam",
+      "char_count": 766
+    },
+    {
+      "page": 22,
+      "document_id": "phu-quoc",
+      "section": "Dân số",
+      "mien": "Nam",
+      "char_count": 488
+    },
+    {
+      "page": 23,
+      "document_id": "phu-quoc",
+      "section": "Văn hóa",
+      "mien": "Nam",
+      "char_count": 1647
+    },
+    {
+      "page": 24,
+      "document_id": "phu-quoc",
+      "section": "Du lịch",
+      "mien": "Nam",
+      "char_count": 1079
+    },
+    {
+      "page": 25,
+      "document_id": "phu-quoc",
+      "section": "Giao thông",
+      "mien": "Nam",
+      "char_count": 341
+    },
+    {
+      "page": 26,
+      "document_id": "phu-quoc",
+      "section": "Danh nhân",
+      "mien": "Nam",
+      "char_count": 97
+    },
+    {
+      "page": 27,
+      "document_id": "sa-pa",
+      "section": "Giới thiệu",
+      "mien": "Bắc",
+      "char_count": 348
+    },
+    {
+      "page": 28,
+      "document_id": "sa-pa",
+      "section": "Nguồn gốc",
+      "mien": "Bắc",
+      "char_count": 604
+    },
+    {
+      "page": 29,
+      "document_id": "sa-pa",
+      "section": "Những thay đổi trong lịch sử",
+      "mien": "Bắc",
+      "char_count": 2333
+    },
+    {
+      "page": 30,
+      "document_id": "sa-pa",
+      "section": "Những thay đổi trong lịch sử",
+      "mien": "Bắc",
+      "char_count": 3794
+    },
+    {
+      "page": 31,
+      "document_id": "vung-tau",
+      "section": "Giới thiệu",
+      "mien": "Nam",
+      "char_count": 461
+    },
+    {
+      "page": 32,
+      "document_id": "vung-tau",
+      "section": "Nguồn gốc",
+      "mien": "Nam",
+      "char_count": 406
+    },
+    {
+      "page": 33,
+      "document_id": "vung-tau",
+      "section": "Những thay đổi trong lịch sử",
+      "mien": "Nam",
+      "char_count": 2400
+    },
+    {
+      "page": 34,
+      "document_id": "vung-tau",
+      "section": "Những thay đổi trong lịch sử",
+      "mien": "Nam",
+      "char_count": 3695
+    }
+  ]
+}

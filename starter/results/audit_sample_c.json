@@ -1,0 +1,156 @@
+[
+  {
+    "qid": "q21",
+    "gold_page": 31,
+    "filter": {
+      "mien": "Nam"
+    },
+    "hit1": false,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 33,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "năm vết thương của Chúa\" để chỉ cảnh tượng năm đỉnh núi khi nhìn từ xa bờ.\nNơi đây có thể cung cấp nước ngọt, củi đốt và cả gỗ tốt để làm cột buồm cho"
+      },
+      {
+        "page": 31,
+        "section": "Giới thiệu",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "Vũng Tàu là một địa danh tại miền Nam Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này"
+      },
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "hành chính độc lập. Ngày 14 tháng 1 năm 1899 thành phố tự trị Cap Saint Jacques thành lập tổng Vũng Tàu gồm 7 xã.\nChính quyền bảo hộ gấp rút quy hoạch"
+      }
+    ]
+  },
+  {
+    "qid": "q22",
+    "gold_page": 32,
+    "filter": null,
+    "hit1": true,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 32,
+        "section": "Nguồn gốc",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "Trong bộ Phủ biên tạp lục (chữ Hán: 撫邊雜錄) năm 1776 của Lê Quý Đôn có nhắc đến bán đảo Vũng Tàu: \"Đầu địa giới Gia Định là xứ Vũng Tàu, nơi hải đảo có "
+      },
+      {
+        "page": 2,
+        "section": "Từ nguyên",
+        "mien": "Trung",
+        "is_hit": false,
+        "preview": "Theo nhiều nhà nghiên cứu, tên Nha Trang được hình thành do cách đọc của người Việt phỏng theo âm một địa danh Chăm vốn có trước là Aia Trang theo tiế"
+      },
+      {
+        "page": 2,
+        "section": "Từ nguyên",
+        "mien": "Trung",
+        "is_hit": false,
+        "preview": "ào khoảng nửa sau thế kỷ 17 đã thấy có tên \"Nha Trang Môn\" (cửa Nha Trang). Trong một bản đồ khác có niên đại cuối thế kỷ 17 mang tên Giáp Ngọ Niên Bì"
+      }
+    ]
+  },
+  {
+    "qid": "q23",
+    "gold_page": 33,
+    "filter": {
+      "mien": "Nam"
+    },
+    "hit1": true,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 33,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "năm vết thương của Chúa\" để chỉ cảnh tượng năm đỉnh núi khi nhìn từ xa bờ.\nNơi đây có thể cung cấp nước ngọt, củi đốt và cả gỗ tốt để làm cột buồm cho"
+      },
+      {
+        "page": 32,
+        "section": "Nguồn gốc",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "Trong bộ Phủ biên tạp lục (chữ Hán: 撫邊雜錄) năm 1776 của Lê Quý Đôn có nhắc đến bán đảo Vũng Tàu: \"Đầu địa giới Gia Định là xứ Vũng Tàu, nơi hải đảo có "
+      },
+      {
+        "page": 33,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "Định. Khi đó, Vũng Tàu thuộc tổng Phước An, huyện Phước Long của phủ này. Sau đó, lại chuyển về dinh Trấn Biên.\nĐể bảo vệ cửa biển Vũng Tàu, vào năm 1"
+      }
+    ]
+  },
+  {
+    "qid": "q24",
+    "gold_page": 34,
+    "filter": null,
+    "hit1": true,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ"
+      },
+      {
+        "page": 31,
+        "section": "Giới thiệu",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "Vũng Tàu là một địa danh tại miền Nam Việt Nam. Trong lịch sử, địa danh này được sử dụng cho nhiều đơn vị hành chính khác nhau. Hiện tại, địa danh này"
+      },
+      {
+        "page": 32,
+        "section": "Nguồn gốc",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "Trong bộ Phủ biên tạp lục (chữ Hán: 撫邊雜錄) năm 1776 của Lê Quý Đôn có nhắc đến bán đảo Vũng Tàu: \"Đầu địa giới Gia Định là xứ Vũng Tàu, nơi hải đảo có "
+      }
+    ]
+  },
+  {
+    "qid": "q25",
+    "gold_page": 34,
+    "filter": null,
+    "hit1": true,
+    "hit3": true,
+    "top3": [
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": true,
+        "preview": "Pháp thuộc (1859–1945)\nNgày 10 tháng 2 năm 1859 tức mồng 8 Tết Kỷ Mùi, quan quân nhà Nguyễn đã khai hỏa lần đầu tiên những khẩu súng thần công đặt ở p"
+      },
+      {
+        "page": 29,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Bắc",
+        "is_hit": false,
+        "preview": "Năm 1897, chính quyền thuộc địa Pháp quyết định mở một cuộc điều tra về người dân tộc thiểu số miền núi vùng cao. Những đoàn điều tra đầu tiên đến Lào"
+      },
+      {
+        "page": 34,
+        "section": "Những thay đổi trong lịch sử",
+        "mien": "Nam",
+        "is_hit": false,
+        "preview": "Triều Nguyễn\nSau khi thống nhất nước nhà và lập ra triều Nguyễn, hoàng đế Gia Long đã cử ba đội quân đến đây xây dựng đồn lũy, chống hải tặc, trấn giữ"
+      }
+    ]
+  }
+]

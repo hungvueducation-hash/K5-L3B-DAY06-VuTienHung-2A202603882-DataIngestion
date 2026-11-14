@@ -2,3 +2,8 @@
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+
+# Local embedding model (no API key needed) chosen for this submission.
+# Pinned to what this machine's Python 3.14 resolved at install time (2026-11-14).
+sentence-transformers==6.3.0
+torch==2.15.0
