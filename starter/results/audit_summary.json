@@ -1,0 +1,31 @@
+{
+  "source": "Số liệu trích từ results/manual_audit.md (chấm tay bởi tác giả, 10 vị trí page 1-10 cho coherence, 5 câu test đầu q21-q25 cho metadata/grounding).",
+  "coherence": {
+    "scale": "0-2, trung bình trên 10 vị trí (page 1-10)",
+    "a": 0.7,
+    "b": 0.9,
+    "c": 0.9,
+    "note": "B/C chỉ tốt hơn A rõ ràng ở vị trí có heading con thật (ví dụ trang 7); nhiều trang là văn bản liệt kê liên tục không có ranh giới đoạn nên B/C không có lợi thế."
+  },
+  "metadata_usefulness": {
+    "scale": "số bản ghi đủ+đúng / tổng kiểm tra (5 câu test x top-3 = 15 bản ghi)",
+    "a": "15/15",
+    "b": "15/15",
+    "c": "15/15",
+    "note": "document_id/source/page/section/mien luôn đúng vì giữ nguyên từ ingest tới lưu, không có đường nào làm sai lệch."
+  },
+  "filter_compliance": {
+    "scale": "số câu filter mà top-3 tuân thủ / tổng 11 câu filter (dev+test)",
+    "a": "6/11",
+    "b": "6/11",
+    "c": "11/11",
+    "note": "A/B không chủ động filter (trùng ngẫu nhiên vì mỗi bài thường tự nhất quán 1 miền); C filter trong SQL -> tuân thủ tuyệt đối."
+  },
+  "grounding_quality": {
+    "scale": "0-2, trung bình trên 5 câu test đầu (q21-q25)",
+    "a": 1.6,
+    "b": 2.0,
+    "c": 2.0,
+    "note": "A thua ở q25: fixed-size cắt rời câu bằng chứng khỏi phần dẫn, B/C giữ trọn câu theo đoạn nên tìm đúng ngay rank-1."
+  }
+}

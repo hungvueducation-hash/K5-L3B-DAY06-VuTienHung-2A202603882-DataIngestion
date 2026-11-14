@@ -5,6 +5,7 @@ Not an LLM-answer chatbot: it is a thin UI over the real pipeline (src.embedding
 top-3 retrieved chunks with page/section/mien/score -- the same "grounding"
 evidence the benchmark measures, just interactive instead of batch.
 """
+import json
 import os
 from pathlib import Path
 
@@ -19,7 +20,14 @@ from src.store import PgVectorStore
 from webapp.answer import is_configured, synthesize_answer
 
 ROOT = Path(__file__).resolve().parent.parent
+LAB_ROOT = ROOT.parent  # Lab6/
 load_dotenv(ROOT / ".env")
+
+
+def _load_json(path: Path) -> dict | list | None:
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 app = FastAPI(title="Day 06 Retrieval Chatbot (demo)")
 
@@ -81,6 +89,37 @@ def ask(req: AskRequest):
 @app.get("/api/llm_status")
 def llm_status():
     return {"configured": is_configured()}
+
+
+@app.get("/api/overview")
+def overview():
+    manifest = _load_json(ROOT / "data" / "manifest.json")
+    questions = _load_json(LAB_ROOT / "benchmark" / "questions.json") or []
+    dev_n = sum(1 for q in questions if q.get("split") == "dev")
+    test_n = sum(1 for q in questions if q.get("split") == "test")
+    filter_n = sum(1 for q in questions if q.get("filter"))
+    return {
+        "manifest": manifest,
+        "benchmark": {
+            "total_questions": len(questions),
+            "dev": dev_n,
+            "test": test_n,
+            "filter_questions": filter_n,
+        },
+    }
+
+
+@app.get("/api/strategies")
+def strategies():
+    return {
+        "run_meta": _load_json(ROOT / "results" / "run_meta.json"),
+        "summary": _load_json(ROOT / "results" / "summary.json"),
+    }
+
+
+@app.get("/api/audit")
+def audit():
+    return _load_json(ROOT / "results" / "audit_summary.json")
 
 
 @app.get("/api/health")
